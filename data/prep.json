@@ -1,0 +1,56 @@
+[
+  {
+    "week": 1,
+    "day": "mon",
+    "section": "MAINS",
+    "item": "Beef Lasagne",
+    "dishSlug": "beef-lasagne",
+    "location": "Freezer | Dry Store",
+    "usageNote": "Tue Lunch"
+  },
+  {
+    "week": 1,
+    "day": "mon",
+    "section": "SIDES",
+    "item": "Garlic Bread",
+    "dishSlug": "",
+    "location": "Bakery",
+    "usageNote": "Serve warm"
+  },
+  {
+    "week": 1,
+    "day": "tue",
+    "section": "MAINS",
+    "item": "Vegetable Curry",
+    "dishSlug": "vegetable-curry",
+    "location": "Cool Room",
+    "usageNote": "Wed Lunch"
+  },
+  {
+    "week": 2,
+    "day": "wed",
+    "section": "MAINS",
+    "item": "Chicken Stir Fry",
+    "dishSlug": "chicken-stir-fry",
+    "location": "Cool Room | Prep Kitchen",
+    "usageNote": "Thu Dinner"
+  },
+  {
+    "week": 2,
+    "day": "thu",
+    "section": "DESSERT",
+    "item": "Apple Crumble",
+    "dishSlug": "apple-crumble",
+    "location": "Bakery",
+    "usageNote": "Fri Lunch"
+  },
+  {
+    "week": 2,
+    "day": "fri",
+    "section": "MAINS",
+    "item": "Pumpkin Soup",
+    "dishSlug": "pumpkin-soup",
+    "location": "Cool Room",
+    "usageNote": "Freeze portions"
+  }
+]

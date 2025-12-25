@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dish Detail</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="hero-title" id="dish-title">Dish</h1>
+      <p class="muted" id="subtitle"></p>
+      <div id="table-wrap"></div>
+      <p class="error" id="message"></p>
+    </main>
+    <script src="assets/app.js"></script>
+    <script>
+      (function () {
+        const { fetchJSON, getQueryParams, renderMessage } = window.PrepUtils;
+        const params = getQueryParams();
+        const slug = params.dish;
+        const titleEl = document.getElementById("dish-title");
+        const subtitle = document.getElementById("subtitle");
+        const tableWrap = document.getElementById("table-wrap");
+        const msgEl = document.getElementById("message");
+
+        if (!slug) {
+          renderMessage(msgEl, "Dish not found.");
+          return;
+        }
+
+        async function init() {
+          try {
+            const data = await fetchJSON("data/dishes.json");
+            const rows = data.filter((row) => row.dishSlug === slug);
+            if (!rows.length) {
+              renderMessage(msgEl, "Dish not found.");
+              return;
+            }
+            titleEl.textContent = rows[0].dishName;
+            subtitle.textContent = slug;
+
+            const table = document.createElement("table");
+            table.className = "table";
+            const thead = document.createElement("thead");
+            const headerRow = document.createElement("tr");
+            ["Ingredient", "Amount"].forEach((text) => {
+              const th = document.createElement("th");
+              th.textContent = text;
+              headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            const tbody = document.createElement("tbody");
+            rows.forEach((row) => {
+              const tr = document.createElement("tr");
+              const tdIng = document.createElement("td");
+              tdIng.textContent = row.ingredient;
+              const tdAmt = document.createElement("td");
+              tdAmt.textContent = row.amountText;
+              tr.appendChild(tdIng);
+              tr.appendChild(tdAmt);
+              tbody.appendChild(tr);
+            });
+            table.appendChild(tbody);
+            tableWrap.appendChild(table);
+          } catch (err) {
+            renderMessage(msgEl, "Failed to load dish data.");
+          }
+        }
+
+        init();
+      })();
+    </script>
+  </body>
+</html>

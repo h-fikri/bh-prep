@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prep List</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <div>
+          <h1 class="hero-title" id="page-title">Prep List</h1>
+          <p class="muted" id="subtitle"></p>
+        </div>
+        <button class="filter-btn" id="toggle-filter" aria-expanded="false">Filter</button>
+      </div>
+      <section id="filter-panel" class="filter-panel" hidden></section>
+      <section id="list"></section>
+      <p class="error" id="message"></p>
+    </main>
+    <script src="assets/app.js"></script>
+    <script>
+      (function () {
+        const {
+          getQueryParams,
+          fetchJSON,
+          renderMessage,
+          buildLocationOptions,
+          filterByLocations,
+        } = window.PrepUtils;
+
+        const params = getQueryParams();
+        const week = parseInt(params.week, 10);
+        const day = params.day;
+        const listEl = document.getElementById("list");
+        const msgEl = document.getElementById("message");
+        const subtitle = document.getElementById("subtitle");
+        const toggleFilterBtn = document.getElementById("toggle-filter");
+        const filterPanel = document.getElementById("filter-panel");
+        let selectedLocations = [];
+        let allItems = [];
+
+        if (!week || !day) {
+          renderMessage(msgEl, "Missing week or day.");
+          return;
+        }
+
+        subtitle.textContent = `Week ${week} · ${day.toUpperCase()}`;
+
+        toggleFilterBtn.addEventListener("click", () => {
+          const isHidden = filterPanel.hasAttribute("hidden");
+          if (isHidden) {
+            filterPanel.removeAttribute("hidden");
+          } else {
+            filterPanel.setAttribute("hidden", "true");
+          }
+          toggleFilterBtn.setAttribute("aria-expanded", String(isHidden));
+        });
+
+        function renderList(items) {
+          listEl.innerHTML = "";
+          msgEl.textContent = "";
+          if (!items.length) {
+            renderMessage(msgEl, `No prep items found for Week ${week} · ${day.toUpperCase()}`);
+            return;
+          }
+
+          const grouped = items.reduce((acc, item) => {
+            const key = item.section || "Other";
+            acc[key] = acc[key] || [];
+            acc[key].push(item);
+            return acc;
+          }, {});
+
+          Object.keys(grouped).forEach((section) => {
+            const secEl = document.createElement("div");
+            secEl.className = "section";
+
+            const header = document.createElement("h2");
+            header.textContent = section;
+            secEl.appendChild(header);
+
+            grouped[section].forEach((item) => {
+              const row = document.createElement("div");
+              row.className = "list-item";
+              const title = document.createElement(item.dishSlug ? "a" : "span");
+              if (item.dishSlug) {
+                title.href = `dish.html?dish=${encodeURIComponent(item.dishSlug)}`;
+              }
+              title.textContent = item.item;
+              row.appendChild(title);
+
+              if (item.location) {
+                const badge = document.createElement("span");
+                badge.className = "badge";
+                badge.textContent = item.location;
+                row.appendChild(badge);
+              }
+
+              if (item.usageNote) {
+                const note = document.createElement("span");
+                note.className = "note";
+                note.textContent = item.usageNote;
+                row.appendChild(note);
+              }
+
+              secEl.appendChild(row);
+            });
+
+            listEl.appendChild(secEl);
+          });
+        }
+
+        function renderFilters(items) {
+          const locations = buildLocationOptions(items);
+          if (!locations.length) {
+            filterPanel.innerHTML = "<p class='muted'>No location filters.</p>";
+            toggleFilterBtn.disabled = true;
+            toggleFilterBtn.textContent = "Filter";
+            return;
+          }
+
+          const legend = document.createElement("p");
+          legend.className = "muted";
+          legend.textContent = "Filter by location:";
+          filterPanel.appendChild(legend);
+
+          locations.forEach((loc) => {
+            const label = document.createElement("label");
+            label.style.display = "flex";
+            label.style.alignItems = "center";
+            label.style.gap = "8px";
+            label.style.marginBottom = "6px";
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.value = loc;
+            checkbox.addEventListener("change", () => {
+              if (checkbox.checked) {
+                selectedLocations.push(loc);
+              } else {
+                selectedLocations = selectedLocations.filter((x) => x !== loc);
+              }
+              const filtered = filterByLocations(allItems, selectedLocations);
+              renderList(filtered);
+            });
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(loc));
+            filterPanel.appendChild(label);
+          });
+        }
+
+        async function init() {
+          try {
+            const data = await fetchJSON("data/prep.json");
+            allItems = data.filter(
+              (item) => Number(item.week) === week && item.day === day
+            );
+            renderFilters(allItems);
+            renderList(allItems);
+          } catch (err) {
+            renderMessage(msgEl, "Failed to load prep data.");
+          }
+        }
+
+        init();
+      })();
+    </script>
+  </body>
+</html>
