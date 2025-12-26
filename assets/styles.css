@@ -75,27 +75,6 @@ textarea {
   font-style: italic;
 }
 
-.suggestions {
-  list-style: none;
-  margin: 0;
-  padding: 4px 0;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--surface);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
-  display: none;
-}
-
-.suggestions li {
-  padding: 10px 12px;
-  cursor: pointer;
-  border-bottom: 1px solid var(--border);
-}
-
-.suggestions li:last-child {
-  border-bottom: none;
-}
-
 .primary-btn {
   padding: 13px 14px;
   border-radius: 10px;
