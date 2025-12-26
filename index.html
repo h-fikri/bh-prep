@@ -14,6 +14,7 @@
           id="suggestion"
           class="search-input"
           type="text"
+          readonly
           aria-label="Suggested prep list"
         />
         <button id="confirm" class="primary-btn">Confirm</button>
@@ -23,39 +24,17 @@
     <script src="assets/app.js"></script>
     <script>
       (function () {
-        const { getSuggestedWeekday, parseUserInput } = window.PrepUtils;
+        const { getSuggestedWeekday } = window.PrepUtils;
         const input = document.getElementById("suggestion");
         const helper = document.getElementById("helper");
         const btn = document.getElementById("confirm");
 
-        input.removeAttribute("readonly");
-
         const suggestion = getSuggestedWeekday();
-        const defaultHelper = "Week and day auto-detected.";
         input.placeholder = `Week ${suggestion.week} · ${suggestion.dayLabel}`;
-        helper.textContent = defaultHelper;
-
-        function navigate(week, day) {
-          window.location.href = `prep.html?week=${week}&day=${day}`;
-        }
+        helper.textContent = "Week and day auto-detected.";
 
         function go() {
-          const text = input.value.trim();
-          helper.textContent = defaultHelper;
-          helper.classList.remove("error");
-
-          if (!text) {
-            navigate(suggestion.week, suggestion.dayShort);
-            return;
-          }
-
-          const parsed = parseUserInput(text, suggestion.week, suggestion.dayShort);
-          if (!parsed) {
-            helper.textContent = "Cannot understand input";
-            helper.classList.add("error");
-            return;
-          }
-          navigate(parsed.week, parsed.day);
+          window.location.href = `prep.html?week=${suggestion.week}&day=${suggestion.dayShort}`;
         }
 
         btn.addEventListener("click", go);
