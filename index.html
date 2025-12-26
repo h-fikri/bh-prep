@@ -16,7 +16,6 @@
           type="text"
           aria-label="Suggested prep list"
         />
-        <ul id="suggestions" class="suggestions"></ul>
         <button id="confirm" class="primary-btn">Confirm</button>
         <p class="muted" id="helper"></p>
       </div>
@@ -24,70 +23,17 @@
     <script src="assets/app.js"></script>
     <script>
       (function () {
-        const { getSuggestedWeekday, getWeekdayOptions, filterWeekdayOptions } =
-          window.PrepUtils;
+        const { getSuggestedWeekday } = window.PrepUtils;
         const input = document.getElementById("suggestion");
         const helper = document.getElementById("helper");
         const btn = document.getElementById("confirm");
-        const suggestionsEl = document.getElementById("suggestions");
-
-        input.removeAttribute("readonly");
 
         const suggestion = getSuggestedWeekday();
-        const defaultHelper = "Week and day auto-detected.";
         input.placeholder = `Week ${suggestion.week} · ${suggestion.dayLabel}`;
-        helper.textContent = defaultHelper;
-
-        const options = getWeekdayOptions();
-        let selectedOption = null;
-
-        function clearSuggestions() {
-          suggestionsEl.innerHTML = "";
-          suggestionsEl.style.display = "none";
-        }
-
-        function renderSuggestions(list) {
-          suggestionsEl.innerHTML = "";
-          if (!list.length) {
-            clearSuggestions();
-            return;
-          }
-          list.forEach((opt) => {
-            const li = document.createElement("li");
-            li.textContent = opt.displayLabel;
-            li.addEventListener("click", () => {
-              input.value = opt.displayLabel;
-              selectedOption = opt;
-              helper.textContent = defaultHelper;
-              helper.classList.remove("error");
-              clearSuggestions();
-            });
-            suggestionsEl.appendChild(li);
-          });
-          suggestionsEl.style.display = "block";
-        }
-
-        function navigate(week, day) {
-          window.location.href = `prep.html?week=${week}&day=${day}`;
-        }
+        helper.textContent = "Week and day auto-detected.";
 
         function go() {
-          const text = input.value.trim();
-          helper.textContent = defaultHelper;
-          helper.classList.remove("error");
-
-          if (selectedOption) {
-            navigate(selectedOption.week, selectedOption.dayShort);
-            return;
-          }
-
-          if (!text) {
-            navigate(suggestion.week, suggestion.dayShort);
-            return;
-          }
-
-          helper.textContent = "Please select from the list";
-          helper.classList.add("error");
+          window.location.href = `prep.html?week=${suggestion.week}&day=${suggestion.dayShort}`;
         }
 
         btn.addEventListener("click", go);
@@ -96,19 +42,6 @@
             e.preventDefault();
             go();
           }
-        });
-
-        input.addEventListener("input", (e) => {
-          selectedOption = null;
-          helper.textContent = defaultHelper;
-          helper.classList.remove("error");
-          const query = e.target.value;
-          if (!query.trim()) {
-            clearSuggestions();
-            return;
-          }
-          const matches = filterWeekdayOptions(options, query);
-          renderSuggestions(matches);
         });
       })();
     </script>
