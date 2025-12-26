@@ -62,56 +62,6 @@ function renderMessage(target, text) {
   }
 }
 
-function parseUserInput(text, fallbackWeek, fallbackDay) {
-  if (!text) return null;
-  const normalized = text.toLowerCase();
-  const tokens = normalized.match(/[a-z0-9]+/g) || [];
-
-  const dayMap = {
-    mon: "mon",
-    monday: "mon",
-    tue: "tue",
-    tues: "tue",
-    tuesday: "tue",
-    wed: "wed",
-    weds: "wed",
-    wednesday: "wed",
-    thu: "thu",
-    thur: "thu",
-    thurs: "thu",
-    thursday: "thu",
-    fri: "fri",
-    friday: "fri",
-  };
-
-  let week = fallbackWeek;
-  let day = fallbackDay;
-  let found = false;
-
-  tokens.forEach((token) => {
-    if (token === "1" || token === "2") {
-      week = Number(token);
-      found = true;
-      return;
-    }
-    const mappedDay = dayMap[token];
-    if (mappedDay) {
-      day = mappedDay;
-      found = true;
-    }
-  });
-
-  if (!found) {
-    return null;
-  }
-
-  if (!day || (week !== 1 && week !== 2)) {
-    return null;
-  }
-
-  return { week, day };
-}
-
 function buildLocationOptions(items) {
   const set = new Set();
   items.forEach((item) => {
@@ -138,5 +88,4 @@ window.PrepUtils = {
   renderMessage,
   buildLocationOptions,
   filterByLocations,
-  parseUserInput,
 };
