@@ -43,6 +43,33 @@ function getSuggestedWeekday() {
   };
 }
 
+function getWeekdayOptions() {
+  const weekdays = [1, 2, 3, 4, 5];
+  const options = [];
+  [1, 2].forEach((week) => {
+    weekdays.forEach((index) => {
+      const dayShortValue = dayShort[index];
+      const dayLabelValue = dayLabels[index];
+      options.push({
+        week,
+        dayShort: dayShortValue,
+        dayLabel: dayLabelValue,
+        displayLabel: `Week ${week} · ${dayLabelValue}`,
+      });
+    });
+  });
+  return options;
+}
+
+function filterWeekdayOptions(options, query) {
+  const text = query.trim().toLowerCase();
+  if (!text) return [];
+  return options.filter(
+    (opt) =>
+      opt.dayLabel.toLowerCase().startsWith(text) || opt.dayShort.toLowerCase().startsWith(text)
+  );
+}
+
 function getQueryParams() {
   const params = new URLSearchParams(window.location.search);
   return Object.fromEntries(params.entries());
@@ -60,6 +87,56 @@ function renderMessage(target, text) {
   if (target) {
     target.textContent = text;
   }
+}
+
+function parseUserInput(text, fallbackWeek, fallbackDay) {
+  if (!text) return null;
+  const normalized = text.toLowerCase();
+  const tokens = normalized.match(/[a-z0-9]+/g) || [];
+
+  const dayMap = {
+    mon: "mon",
+    monday: "mon",
+    tue: "tue",
+    tues: "tue",
+    tuesday: "tue",
+    wed: "wed",
+    weds: "wed",
+    wednesday: "wed",
+    thu: "thu",
+    thur: "thu",
+    thurs: "thu",
+    thursday: "thu",
+    fri: "fri",
+    friday: "fri",
+  };
+
+  let week = fallbackWeek;
+  let day = fallbackDay;
+  let found = false;
+
+  tokens.forEach((token) => {
+    if (token === "1" || token === "2") {
+      week = Number(token);
+      found = true;
+      return;
+    }
+    const mappedDay = dayMap[token];
+    if (mappedDay) {
+      day = mappedDay;
+      found = true;
+    }
+  });
+
+  if (!found) {
+    return null;
+  }
+
+  if (!day || (week !== 1 && week !== 2)) {
+    return null;
+  }
+
+  return { week, day };
 }
 
 function buildLocationOptions(items) {
@@ -88,4 +165,7 @@ window.PrepUtils = {
   renderMessage,
   buildLocationOptions,
   filterByLocations,
+  parseUserInput,
+  getWeekdayOptions,
+  filterWeekdayOptions,
 };

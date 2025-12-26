@@ -16,6 +16,7 @@
           type="text"
           aria-label="Suggested prep list"
         />
+        <ul id="suggestions" class="suggestions" role="listbox" aria-label="Week and day suggestions"></ul>
         <button id="confirm" class="primary-btn">Confirm</button>
         <p class="muted" id="helper"></p>
       </div>
@@ -23,17 +24,71 @@
     <script src="assets/app.js"></script>
     <script>
       (function () {
-        const { getSuggestedWeekday } = window.PrepUtils;
+        const { getSuggestedWeekday, getWeekdayOptions, filterWeekdayOptions } =
+          window.PrepUtils;
         const input = document.getElementById("suggestion");
         const helper = document.getElementById("helper");
         const btn = document.getElementById("confirm");
+        const suggestionsEl = document.getElementById("suggestions");
+        const searchBox = document.querySelector(".search-box");
+
+        input.removeAttribute("readonly");
 
         const suggestion = getSuggestedWeekday();
+        const defaultHelper = "Week and day auto-detected.";
         input.placeholder = `Week ${suggestion.week} · ${suggestion.dayLabel}`;
-        helper.textContent = "Week and day auto-detected.";
+        helper.textContent = defaultHelper;
+
+        const options = getWeekdayOptions();
+        let selectedOption = null;
+
+        function clearSuggestions() {
+          suggestionsEl.innerHTML = "";
+          suggestionsEl.style.display = "none";
+        }
+
+        function renderSuggestions(list) {
+          suggestionsEl.innerHTML = "";
+          if (!list.length) {
+            clearSuggestions();
+            return;
+          }
+          list.forEach((opt) => {
+            const li = document.createElement("li");
+            li.textContent = opt.displayLabel;
+            li.addEventListener("click", () => {
+              input.value = opt.displayLabel;
+              selectedOption = opt;
+              helper.textContent = defaultHelper;
+              helper.classList.remove("error");
+              clearSuggestions();
+            });
+            suggestionsEl.appendChild(li);
+          });
+          suggestionsEl.style.display = "block";
+        }
+
+        function navigate(week, day) {
+          window.location.href = `prep.html?week=${week}&day=${day}`;
+        }
 
         function go() {
-          window.location.href = `prep.html?week=${suggestion.week}&day=${suggestion.dayShort}`;
+          const text = input.value.trim();
+          helper.textContent = defaultHelper;
+          helper.classList.remove("error");
+
+          if (selectedOption) {
+            navigate(selectedOption.week, selectedOption.dayShort);
+            return;
+          }
+
+          if (!text) {
+            navigate(suggestion.week, suggestion.dayShort);
+            return;
+          }
+
+          helper.textContent = "Please select from list";
+          helper.classList.add("error");
         }
 
         btn.addEventListener("click", go);
@@ -41,6 +96,25 @@
           if (e.key === "Enter") {
             e.preventDefault();
             go();
+          }
+        });
+
+        input.addEventListener("input", (e) => {
+          selectedOption = null;
+          helper.textContent = defaultHelper;
+          helper.classList.remove("error");
+          const query = e.target.value;
+          if (!query.trim()) {
+            clearSuggestions();
+            return;
+          }
+          const matches = filterWeekdayOptions(options, query);
+          renderSuggestions(matches);
+        });
+
+        document.addEventListener("click", (event) => {
+          if (searchBox && !searchBox.contains(event.target)) {
+            clearSuggestions();
           }
         });
       })();
