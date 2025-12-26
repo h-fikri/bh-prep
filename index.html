@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barwon Health Prep</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="hero-title">Barwon Health Prep Lists</h1>
+      <div class="search-box">
+        <input
+          id="suggestion"
+          class="search-input"
+          type="text"
+          aria-label="Suggested prep list"
+        />
+        <button id="confirm" class="primary-btn">Confirm</button>
+        <p class="muted" id="helper"></p>
+      </div>
+    </main>
+    <script src="assets/app.js"></script>
+    <script>
+      (function () {
+        const { getSuggestedWeekday, parseUserInput } = window.PrepUtils;
+        const input = document.getElementById("suggestion");
+        const helper = document.getElementById("helper");
+        const btn = document.getElementById("confirm");
+
+        const suggestion = getSuggestedWeekday();
+        const defaultHelper = "Week and day auto-detected.";
+        input.placeholder = `Week ${suggestion.week} · ${suggestion.dayLabel}`;
+        helper.textContent = defaultHelper;
+
+        function navigate(week, day) {
+          window.location.href = `prep.html?week=${week}&day=${day}`;
+        }
+
+        function go() {
+          const text = input.value.trim();
+          helper.textContent = defaultHelper;
+          helper.classList.remove("error");
+
+          if (!text) {
+            navigate(suggestion.week, suggestion.dayShort);
+            return;
+          }
+
+          const parsed = parseUserInput(text, suggestion.week, suggestion.dayShort);
+          if (!parsed) {
+            helper.textContent = "Cannot understand input";
+            helper.classList.add("error");
+            return;
+          }
+          navigate(parsed.week, parsed.day);
+        }
+
+        btn.addEventListener("click", go);
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            go();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

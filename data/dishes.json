@@ -1,0 +1,68 @@
+[
+  {
+    "dishSlug": "beef-lasagne",
+    "dishName": "Beef Lasagne",
+    "ingredient": "Beef Mince 90% Lean",
+    "amountText": "15 kg"
+  },
+  {
+    "dishSlug": "beef-lasagne",
+    "dishName": "Beef Lasagne",
+    "ingredient": "Pasta Sheets",
+    "amountText": "4 trays"
+  },
+  {
+    "dishSlug": "beef-lasagne",
+    "dishName": "Beef Lasagne",
+    "ingredient": "Shredded Mozzarella",
+    "amountText": "3 kg"
+  },
+  {
+    "dishSlug": "vegetable-curry",
+    "dishName": "Vegetable Curry",
+    "ingredient": "Mixed Vegetables",
+    "amountText": "10 kg"
+  },
+  {
+    "dishSlug": "vegetable-curry",
+    "dishName": "Vegetable Curry",
+    "ingredient": "Coconut Milk",
+    "amountText": "6 L"
+  },
+  {
+    "dishSlug": "chicken-stir-fry",
+    "dishName": "Chicken Stir Fry",
+    "ingredient": "Chicken Thigh",
+    "amountText": "12 kg"
+  },
+  {
+    "dishSlug": "chicken-stir-fry",
+    "dishName": "Chicken Stir Fry",
+    "ingredient": "Stir Fry Vegetables",
+    "amountText": "8 kg"
+  },
+  {
+    "dishSlug": "apple-crumble",
+    "dishName": "Apple Crumble",
+    "ingredient": "Apple Slices",
+    "amountText": "10 kg"
+  },
+  {
+    "dishSlug": "apple-crumble",
+    "dishName": "Apple Crumble",
+    "ingredient": "Crumble Mix",
+    "amountText": "6 kg"
+  },
+  {
+    "dishSlug": "pumpkin-soup",
+    "dishName": "Pumpkin Soup",
+    "ingredient": "Pumpkin",
+    "amountText": "15 kg"
+  },
+  {
+    "dishSlug": "pumpkin-soup",
+    "dishName": "Pumpkin Soup",
+    "ingredient": "Vegetable Stock",
+    "amountText": "8 L"
+  }
+]
