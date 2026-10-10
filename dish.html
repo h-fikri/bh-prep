@@ -9,7 +9,7 @@
   <body>
     <main class="container">
       <h1 class="hero-title" id="dish-title">Dish</h1>
-      <p class="muted" id="subtitle"></p>
+      <p><a class="back-link" href="javascript:history.back()">← Back</a></p>
       <div id="table-wrap"></div>
       <p class="error" id="message"></p>
     </main>
@@ -20,7 +20,6 @@
         const params = getQueryParams();
         const slug = params.dish;
         const titleEl = document.getElementById("dish-title");
-        const subtitle = document.getElementById("subtitle");
         const tableWrap = document.getElementById("table-wrap");
         const msgEl = document.getElementById("message");
 
@@ -32,19 +31,24 @@
         async function init() {
           try {
             const data = await fetchJSON("data/dishes.json");
-            const rows = data.filter((row) => row.dishSlug === slug);
-            if (!rows.length) {
+            const dish = data.find((row) => row.dishSlug === slug);
+            if (!dish) {
               renderMessage(msgEl, "Dish not found.");
               return;
             }
-            titleEl.textContent = rows[0].dishName;
-            subtitle.textContent = slug;
+            titleEl.textContent = dish.dishName;
+            document.title = dish.dishName;
+
+            const ingredients = dish.ingredients || [];
+            const hasNotes = ingredients.some((row) => row.notes);
+            const headers = ["Ingredient", "Amount"];
+            if (hasNotes) headers.push("Notes");
 
             const table = document.createElement("table");
             table.className = "table";
             const thead = document.createElement("thead");
             const headerRow = document.createElement("tr");
-            ["Ingredient", "Amount"].forEach((text) => {
+            headers.forEach((text) => {
               const th = document.createElement("th");
               th.textContent = text;
               headerRow.appendChild(th);
@@ -53,18 +57,49 @@
             table.appendChild(thead);
 
             const tbody = document.createElement("tbody");
-            rows.forEach((row) => {
+            let currentGroup = null;
+            ingredients.forEach((row) => {
+              const group = row.group || null;
+              if (group !== currentGroup) {
+                currentGroup = group;
+                if (group) {
+                  const gr = document.createElement("tr");
+                  gr.className = "group-row";
+                  const td = document.createElement("td");
+                  td.colSpan = headers.length;
+                  td.textContent = group;
+                  gr.appendChild(td);
+                  tbody.appendChild(gr);
+                }
+              }
               const tr = document.createElement("tr");
-              const tdIng = document.createElement("td");
-              tdIng.textContent = row.ingredient;
-              const tdAmt = document.createElement("td");
-              tdAmt.textContent = row.amountText;
-              tr.appendChild(tdIng);
-              tr.appendChild(tdAmt);
+              const cells = [row.ingredient, row.amountText];
+              if (hasNotes) cells.push(row.notes || "");
+              cells.forEach((text) => {
+                const td = document.createElement("td");
+                td.textContent = text;
+                tr.appendChild(td);
+              });
               tbody.appendChild(tr);
             });
             table.appendChild(tbody);
             tableWrap.appendChild(table);
+
+            if (dish.notes && dish.notes.length) {
+              const box = document.createElement("div");
+              box.className = "dish-notes";
+              const h = document.createElement("h2");
+              h.textContent = "Notes";
+              box.appendChild(h);
+              const ul = document.createElement("ul");
+              dish.notes.forEach((text) => {
+                const li = document.createElement("li");
+                li.textContent = text;
+                ul.appendChild(li);
+              });
+              box.appendChild(ul);
+              tableWrap.appendChild(box);
+            }
           } catch (err) {
             renderMessage(msgEl, "Failed to load dish data.");
           }
