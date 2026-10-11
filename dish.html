@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dish Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <meta name="theme-color" content="#86204f" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
     <main class="container">
-      <h1 class="hero-title" id="dish-title">Dish</h1>
-      <p class="top-links"><a class="back-link" href="javascript:history.back()">← Back</a><a class="back-link" href="index.html">⌂ Home</a></p>
-      <div id="table-wrap"></div>
+      <div class="header">
+        <div>
+          <p class="eyebrow">Recipe</p>
+          <h1 class="hero-title" id="dish-title">Dish</h1>
+        </div>
+      </div>
+      <p class="top-links"><a class="back-link" href="javascript:history.back()">&larr; Back to list</a></p>
+      <div id="table-wrap" class="card"></div>
       <p class="error" id="message"></p>
     </main>
     <script src="assets/app.js"></script>
     <script>
       (function () {
         const { fetchJSON, getQueryParams, renderMessage } = window.PrepUtils;
+        window.PrepUtils.renderChrome("dish");
         const params = getQueryParams();
         const slug = params.dish;
         const titleEl = document.getElementById("dish-title");
