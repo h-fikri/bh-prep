@@ -883,6 +883,17 @@ a {
   }
 }
 
+/* Very small phones (320px): shrink the day title and button so nothing overflows. */
+@media (max-width: 350px) {
+  .hero .hero-title {
+    font-size: 1.25rem;
+  }
+  .hero-btn {
+    padding: 6px 9px;
+    font-size: 0.85rem;
+  }
+}
+
 /* ---------- larger screens ---------- */
 
 @media (min-width: 720px) {
