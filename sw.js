@@ -1,5 +1,5 @@
 // Offline support: network first (so edits on GitHub show up), cached copy when there is no signal.
-const CACHE = "bh-prep-v1";
+const CACHE = "bh-prep-v2";
 const CORE = [
   "./",
   "index.html",
@@ -30,7 +30,7 @@ self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET" || new URL(req.url).origin !== self.location.origin) return;
   event.respondWith(
-    fetch(req)
+    fetch(req, { cache: "no-cache" })
       .then((res) => {
         const copy = res.clone();
         caches.open(CACHE).then((cache) => cache.put(req, copy));
