@@ -13,10 +13,11 @@
           <h1 class="hero-title" id="page-title">Pick List</h1>
           <p class="muted" id="subtitle"></p>
         </div>
+        <button class="filter-btn no-print" id="print-btn" type="button">Print</button>
       </div>
       <section id="list"></section>
       <p class="error" id="message"></p>
-      <button class="filter-btn reset-btn" id="reset" type="button">Clear ticks</button>
+      <button class="filter-btn reset-btn no-print" id="reset" type="button">Clear ticks</button>
     </main>
     <script src="assets/app.js"></script>
     <script>
@@ -37,6 +38,7 @@
         }
         document.getElementById("subtitle").textContent = `Week ${week} · ${dayNames[day] || day}`;
         window.PrepUtils.renderNav(current, week, day);
+        document.getElementById("print-btn").addEventListener("click", () => window.print());
 
         const storeKey = (list) => `pick:${week}:${day}:${list}`;
         const loadTicks = (list) => window.PrepUtils.loadTicks(storeKey(list));
@@ -47,6 +49,7 @@
         function render() {
           listEl.innerHTML = "";
           msgEl.textContent = "";
+          document.getElementById("page-title").textContent = current === "freezer" ? "Freezer Pick" : "Dry Store Pick";
           const rows = all.filter((r) => r.list === current);
           if (!rows.length) {
             renderMessage(msgEl, "Nothing to pick for this list.");
