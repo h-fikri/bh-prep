@@ -13,7 +13,10 @@
           <h1 class="hero-title" id="page-title">Prep List</h1>
           <p class="muted" id="subtitle"></p>
         </div>
-        <button class="filter-btn" id="toggle-filter" aria-expanded="false">Filter</button>
+        <div class="header-actions no-print">
+          <button class="filter-btn" id="print-btn" type="button">Print</button>
+          <button class="filter-btn" id="toggle-filter" aria-expanded="false">Filter</button>
+        </div>
       </div>
       <section id="filter-panel" class="filter-panel" hidden></section>
       <section id="list"></section>
@@ -48,6 +51,7 @@
 
         subtitle.textContent = `Week ${week} · ${day.toUpperCase()}`;
         window.PrepUtils.renderNav("prep", week, day);
+        document.getElementById("print-btn").addEventListener("click", () => window.print());
         const tickKey = `prep:${week}:${day}`;
         const ticks = window.PrepUtils.loadTicks(tickKey);
 
@@ -78,7 +82,7 @@
 
           Object.keys(grouped).forEach((section) => {
             const secEl = document.createElement("div");
-            secEl.className = "section";
+            secEl.className = "section sec-" + section.toLowerCase().replace(/[^a-z]/g, "");
 
             const header = document.createElement("h2");
             header.textContent = section;
