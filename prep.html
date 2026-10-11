@@ -13,10 +13,7 @@
           <h1 class="hero-title" id="page-title">Prep List</h1>
           <p class="muted" id="subtitle"></p>
         </div>
-        <div class="header-actions">
-          <a class="filter-btn" id="pick-link" href="#">Pick list</a>
-          <button class="filter-btn" id="toggle-filter" aria-expanded="false">Filter</button>
-        </div>
+        <button class="filter-btn" id="toggle-filter" aria-expanded="false">Filter</button>
       </div>
       <section id="filter-panel" class="filter-panel" hidden></section>
       <section id="list"></section>
@@ -50,7 +47,9 @@
         }
 
         subtitle.textContent = `Week ${week} · ${day.toUpperCase()}`;
-        document.getElementById("pick-link").href = `pick.html?week=${week}&day=${day}`;
+        window.PrepUtils.renderNav("prep", week, day);
+        const tickKey = `prep:${week}:${day}`;
+        const ticks = window.PrepUtils.loadTicks(tickKey);
 
         toggleFilterBtn.addEventListener("click", () => {
           const isHidden = filterPanel.hasAttribute("hidden");
@@ -88,6 +87,21 @@
             grouped[section].forEach((item) => {
               const row = document.createElement("div");
               row.className = "list-item";
+              const id = `${section}|${item.item}|${item.usageNote}`;
+
+              const box = document.createElement("input");
+              box.type = "checkbox";
+              box.className = "tick";
+              box.setAttribute("aria-label", `Done: ${item.item}`);
+              box.checked = !!ticks[id];
+              row.classList.toggle("done", box.checked);
+              box.addEventListener("change", () => {
+                if (box.checked) ticks[id] = 1;
+                else delete ticks[id];
+                window.PrepUtils.saveTicks(tickKey, ticks);
+                row.classList.toggle("done", box.checked);
+              });
+              row.appendChild(box);
 
               const main = document.createElement("div");
               main.className = "item-main";
