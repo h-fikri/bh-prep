@@ -1,5 +1,5 @@
 // Offline support: network first (so edits on GitHub show up), cached copy when there is no signal.
-const CACHE = "bh-prep-v2";
+const CACHE = "bh-prep-v3";
 const CORE = [
   "./",
   "index.html",
