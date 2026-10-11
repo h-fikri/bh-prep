@@ -1,3 +1,7 @@
+// Change the site name HERE (one place). It shows in the header, footer and browser tab on every page.
+const SITE_NAME = "McKellar Centre Kitchen Prep";
+const SITE_SUB = "Summer Menu";
+
 const anchorDate = new Date(2025, 11, 1); // Monday, Week 2 anchor (local time)
 const dayLabels = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dayShort = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
@@ -188,7 +192,7 @@ function renderChrome(active, week, day) {
 
   const bar = document.createElement("div");
   bar.className = "utility-bar no-print";
-  bar.innerHTML = '<div class="wrap"><span>Staff Caf\u00e9 \u00b7 internal prep tool</span><span id="util-day"></span></div>';
+  bar.innerHTML = '<div class="wrap"><span>Internal prep tool</span><span id="util-day"></span></div>';
   if (hasDay) bar.querySelector("#util-day").textContent = `Week ${week} \u00b7 ${DAY_LONG[day] || day}`;
 
   const header = document.createElement("header");
@@ -198,13 +202,19 @@ function renderChrome(active, week, day) {
     '<a class="brand" href="index.html" aria-label="Home">' +
     '<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="currentColor"/>' +
     '<path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
-    '<span class="brand-text"><strong>Staff Caf\u00e9 Prep</strong><small>Summer Menu</small></span></a></div>';
+    '<span class="brand-text"><strong></strong><small></small></span></a></div>';
+  header.querySelector(".brand-text strong").textContent = SITE_NAME;
+  header.querySelector(".brand-text small").textContent = SITE_SUB;
   header.querySelector(".wrap").appendChild(makeNav("top-nav"));
 
   const footer = document.createElement("footer");
   footer.className = "site-footer no-print";
-  footer.innerHTML =
-    '<div class="wrap"><strong>Staff Caf\u00e9 Prep</strong> \u00b7 Summer Menu. Internal kitchen tool, not an official website.</div>';
+  footer.innerHTML = '<div class="wrap"><strong></strong><span></span></div>';
+  footer.querySelector("strong").textContent = SITE_NAME;
+  footer.querySelector("span").textContent = ` \u00b7 ${SITE_SUB}. Internal kitchen tool, not an official website.`;
+
+  // Browser tab title: site name on the home page, "Page \u00b7 site name" elsewhere.
+  document.title = active === "home" ? SITE_NAME : `${document.title} \u00b7 ${SITE_NAME}`;
 
   document.body.insertBefore(header, document.body.firstChild);
   document.body.insertBefore(bar, document.body.firstChild);
@@ -236,6 +246,7 @@ function saveTicks(key, ticks) {
 }
 
 window.PrepUtils = {
+  SITE_NAME,
   renderNav,
   renderChrome,
   DAY_LONG,

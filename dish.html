@@ -47,7 +47,7 @@
               return;
             }
             titleEl.textContent = dish.dishName;
-            document.title = dish.dishName;
+            document.title = `${dish.dishName} \u00b7 ${window.PrepUtils.SITE_NAME}`;
 
             const ingredients = dish.ingredients || [];
             const hasNotes = ingredients.some((row) => row.notes);
