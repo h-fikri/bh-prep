@@ -269,6 +269,98 @@ textarea {
   text-decoration: none;
 }
 
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+a.filter-btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #eef5ff;
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pick-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fdfdfd;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.pick-item input {
+  width: 22px;
+  height: 22px;
+  margin: 1px 0 0;
+  flex-shrink: 0;
+}
+
+.pick-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.pick-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pick-name {
+  font-weight: 600;
+}
+
+.pick-qty {
+  text-align: right;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.pick-item.done {
+  background: #f4f8f4;
+}
+
+.pick-item.done .pick-name,
+.pick-item.done .pick-qty {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.pick-item.skipped {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.reset-btn {
+  margin-top: 8px;
+}
+
 @media (min-width: 640px) {
   body {
     padding: 32px;
