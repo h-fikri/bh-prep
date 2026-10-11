@@ -158,7 +158,45 @@ function filterByLocations(items, selectedLocations) {
   });
 }
 
+// Bottom bar: Prep | Dry Store | Freezer for the current week/day.
+function renderNav(active, week, day) {
+  const items = [
+    { id: "prep", label: "Prep", href: `prep.html?week=${week}&day=${day}` },
+    { id: "dry", label: "Dry Store", href: `pick.html?week=${week}&day=${day}&list=dry` },
+    { id: "freezer", label: "Freezer", href: `pick.html?week=${week}&day=${day}&list=freezer` },
+  ];
+  const nav = document.createElement("nav");
+  nav.className = "bottom-nav";
+  items.forEach((item) => {
+    const link = document.createElement("a");
+    link.href = item.href;
+    link.textContent = item.label;
+    if (item.id === active) link.className = "active";
+    nav.appendChild(link);
+  });
+  document.body.classList.add("has-nav");
+  document.body.appendChild(nav);
+}
+
+// Ticks live in this browser only (localStorage can be blocked, so always try/catch).
+function loadTicks(key) {
+  try {
+    return JSON.parse(localStorage.getItem(key) || "{}");
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveTicks(key, ticks) {
+  try {
+    localStorage.setItem(key, JSON.stringify(ticks));
+  } catch (e) {}
+}
+
 window.PrepUtils = {
+  renderNav,
+  loadTicks,
+  saveTicks,
   getSuggestedWeekday,
   getQueryParams,
   fetchJSON,

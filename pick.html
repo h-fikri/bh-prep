@@ -13,11 +13,6 @@
           <h1 class="hero-title" id="page-title">Pick List</h1>
           <p class="muted" id="subtitle"></p>
         </div>
-        <a class="filter-btn" id="back-link" href="#">Prep list</a>
-      </div>
-      <div class="tabs" role="tablist">
-        <button class="tab" id="tab-dry" data-list="dry" role="tab">Dry Store</button>
-        <button class="tab" id="tab-freezer" data-list="freezer" role="tab">Freezer</button>
       </div>
       <section id="list"></section>
       <p class="error" id="message"></p>
@@ -34,7 +29,6 @@
 
         const listEl = document.getElementById("list");
         const msgEl = document.getElementById("message");
-        const tabs = document.querySelectorAll(".tab");
         const dayNames = { mon: "Monday", tue: "Tuesday", wed: "Wednesday", thu: "Thursday", fri: "Friday" };
 
         if (!week || !day) {
@@ -42,29 +36,17 @@
           return;
         }
         document.getElementById("subtitle").textContent = `Week ${week} · ${dayNames[day] || day}`;
-        document.getElementById("back-link").href = `prep.html?week=${week}&day=${day}`;
+        window.PrepUtils.renderNav(current, week, day);
 
-        // Ticks are remembered on this device only (localStorage may be blocked, so always try/catch).
         const storeKey = (list) => `pick:${week}:${day}:${list}`;
-        function loadTicks(list) {
-          try {
-            return JSON.parse(localStorage.getItem(storeKey(list)) || "{}");
-          } catch (e) {
-            return {};
-          }
-        }
-        function saveTicks(list, ticks) {
-          try {
-            localStorage.setItem(storeKey(list), JSON.stringify(ticks));
-          } catch (e) {}
-        }
+        const loadTicks = (list) => window.PrepUtils.loadTicks(storeKey(list));
+        const saveTicks = (list, ticks) => window.PrepUtils.saveTicks(storeKey(list), ticks);
 
         let all = [];
 
         function render() {
           listEl.innerHTML = "";
           msgEl.textContent = "";
-          tabs.forEach((t) => t.classList.toggle("active", t.dataset.list === current));
           const rows = all.filter((r) => r.list === current);
           if (!rows.length) {
             renderMessage(msgEl, "Nothing to pick for this list.");
@@ -78,7 +60,7 @@
               g = { name: r.group, rows: [] };
               groups.push(g);
             }
-            g.rows.push({ ...r, id: String(i) });
+            g.rows.push({ ...r, id: `${r.group}|${r.item}` });
           });
 
           groups.forEach((g) => {
@@ -136,12 +118,6 @@
           });
         }
 
-        tabs.forEach((t) =>
-          t.addEventListener("click", () => {
-            current = t.dataset.list;
-            render();
-          })
-        );
         document.getElementById("reset").addEventListener("click", () => {
           saveTicks(current, {});
           render();

@@ -14,6 +14,7 @@
 
 body {
   margin: 0;
+  font-size: 17px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -367,5 +368,113 @@ a.filter-btn {
   }
   .hero-title {
     font-size: 1.6rem;
+  }
+}
+
+/* --- v2: kitchen-friendly sizes, ticks, bottom bar --- */
+body.has-nav {
+  padding-bottom: 92px;
+  align-items: flex-start;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-row .primary-btn {
+  flex: 1;
+  padding: 18px 14px;
+  font-size: 1.1rem;
+}
+
+.primary-btn.secondary {
+  background: #eef5ff;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.search-input {
+  padding: 16px;
+  font-size: 1.1rem;
+}
+
+.list-item {
+  padding: 14px 12px;
+  align-items: flex-start;
+}
+
+.list-item .item-main {
+  flex: 1;
+}
+
+.list-item .qty {
+  font-size: 1.05rem;
+}
+
+.tick,
+.pick-item input {
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+
+.list-item.done {
+  background: #f4f8f4;
+}
+
+.list-item.done .item-main > a,
+.list-item.done .item-main > span:first-child {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.pick-qty {
+  font-size: 1.15rem;
+}
+
+.pick-name {
+  font-size: 1.05rem;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  padding: 14px 8px;
+  border-radius: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.bottom-nav a.active {
+  background: #eef5ff;
+  color: var(--accent);
+}
+
+@media (min-width: 640px) {
+  .bottom-nav {
+    left: 50%;
+    right: auto;
+    width: min(720px, 100%);
+    transform: translateX(-50%);
+    border-radius: 14px 14px 0 0;
+    border: 1px solid var(--border);
   }
 }
