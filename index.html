@@ -12,27 +12,35 @@
   </head>
   <body>
     <main class="container">
-      <section class="hero">
-        <p class="eyebrow" id="hero-eyebrow">Today</p>
-        <h1 class="hero-title" id="hero-title">Prep lists</h1>
-        <p class="hero-sub">Summer Menu · prep and pick lists</p>
+      <section class="hero" aria-label="Next workday">
+        <div class="hero-top">
+          <div>
+            <p class="eyebrow" id="hero-eyebrow">Today</p>
+            <h1 class="hero-title" id="hero-title">Prep lists</h1>
+            <p class="hero-sub">Summer Menu · prep and pick lists</p>
+          </div>
+          <button type="button" class="hero-btn" id="change-day" aria-expanded="false">Change day</button>
+        </div>
+
+        <div class="picker" id="picker" hidden>
+          <div class="segmented" role="tablist" aria-label="Week">
+            <button type="button" class="seg" data-week="1" role="tab">Week 1</button>
+            <button type="button" class="seg" data-week="2" role="tab">Week 2</button>
+          </div>
+          <div class="day-grid" id="day-grid"></div>
+          <button type="button" class="filter-btn" id="today-btn">Back to today</button>
+        </div>
       </section>
 
       <section class="quick" aria-label="Get started">
         <h2>Get started</h2>
-        <a class="quick-link" id="ql-prep" href="#"><span>Prep list</span><span class="chev" aria-hidden="true">&rsaquo;</span></a>
-        <a class="quick-link" id="ql-dry" href="#"><span>Dry store pick list</span><span class="chev" aria-hidden="true">&rsaquo;</span></a>
-        <a class="quick-link" id="ql-freezer" href="#"><span>Freezer pick list</span><span class="chev" aria-hidden="true">&rsaquo;</span></a>
-      </section>
-
-      <section class="card" aria-label="Choose another day">
-        <h2>Choose another day</h2>
-        <div class="segmented" role="tablist" aria-label="Week">
-          <button type="button" class="seg" data-week="1" role="tab">Week 1</button>
-          <button type="button" class="seg" data-week="2" role="tab">Week 2</button>
+        <div role="radiogroup" aria-label="Choose a list">
+          <button type="button" class="quick-option" role="radio" aria-checked="false" data-page="prep"><span class="opt-dot" aria-hidden="true"></span><span>Prep list</span></button>
+          <button type="button" class="quick-option" role="radio" aria-checked="false" data-page="dry"><span class="opt-dot" aria-hidden="true"></span><span>Dry store pick list</span></button>
+          <button type="button" class="quick-option" role="radio" aria-checked="false" data-page="freezer"><span class="opt-dot" aria-hidden="true"></span><span>Freezer pick list</span></button>
         </div>
-        <div class="day-grid" id="day-grid"></div>
-        <button type="button" class="filter-btn" id="today-btn">Back to today</button>
+        <p class="quick-note" id="quick-note">Choose a list, then confirm.</p>
+        <button type="button" class="confirm-btn" id="confirm" disabled>Confirm</button>
       </section>
     </main>
     <script src="assets/app.js"></script>
@@ -43,26 +51,36 @@
 
         const suggestion = getSuggestedWeekday();
         const isWeekend = [0, 6].includes(new Date().getDay());
-        const state = { week: suggestion.week, day: suggestion.dayShort };
+        const state = { week: suggestion.week, day: suggestion.dayShort, page: null };
 
         const title = document.getElementById("hero-title");
         const eyebrow = document.getElementById("hero-eyebrow");
         const grid = document.getElementById("day-grid");
         const segs = document.querySelectorAll(".seg");
         const todayBtn = document.getElementById("today-btn");
+        const picker = document.getElementById("picker");
+        const changeBtn = document.getElementById("change-day");
+        const options = document.querySelectorAll(".quick-option");
+        const confirmBtn = document.getElementById("confirm");
+        const note = document.getElementById("quick-note");
         const days = Object.keys(DAY_LONG);
+        const pageNames = { prep: "Prep list", dry: "Dry store pick list", freezer: "Freezer pick list" };
 
         function isSuggested() {
           return state.week === suggestion.week && state.day === suggestion.dayShort;
+        }
+
+        function targetUrl() {
+          const { week, day, page } = state;
+          if (page === "prep") return `prep.html?week=${week}&day=${day}`;
+          return `pick.html?week=${week}&day=${day}&list=${page}`;
         }
 
         function render() {
           title.textContent = `Week ${state.week} · ${DAY_LONG[state.day]}`;
           eyebrow.textContent = isSuggested() ? (isWeekend ? "Next workday" : "Today") : "Selected day";
           todayBtn.hidden = isSuggested();
-          document.getElementById("ql-prep").href = `prep.html?week=${state.week}&day=${state.day}`;
-          document.getElementById("ql-dry").href = `pick.html?week=${state.week}&day=${state.day}&list=dry`;
-          document.getElementById("ql-freezer").href = `pick.html?week=${state.week}&day=${state.day}&list=freezer`;
+
           segs.forEach((s) => {
             const on = Number(s.dataset.week) === state.week;
             s.classList.toggle("on", on);
@@ -81,8 +99,28 @@
             });
             grid.appendChild(b);
           });
+
+          options.forEach((o) => {
+            const on = o.dataset.page === state.page;
+            o.classList.toggle("on", on);
+            o.setAttribute("aria-checked", String(on));
+          });
+          confirmBtn.disabled = !state.page;
+          if (state.page) {
+            note.textContent = `${pageNames[state.page]} · Week ${state.week} · ${DAY_LONG[state.day]}`;
+            confirmBtn.textContent = "Confirm and open";
+          } else {
+            note.textContent = "Choose a list, then confirm.";
+            confirmBtn.textContent = "Confirm";
+          }
         }
 
+        changeBtn.addEventListener("click", () => {
+          const open = picker.hidden;
+          picker.hidden = !open;
+          changeBtn.setAttribute("aria-expanded", String(open));
+          changeBtn.textContent = open ? "Done" : "Change day";
+        });
         segs.forEach((s) =>
           s.addEventListener("click", () => {
             state.week = Number(s.dataset.week);
@@ -93,6 +131,15 @@
           state.week = suggestion.week;
           state.day = suggestion.dayShort;
           render();
+        });
+        options.forEach((o) =>
+          o.addEventListener("click", () => {
+            state.page = o.dataset.page;
+            render();
+          })
+        );
+        confirmBtn.addEventListener("click", () => {
+          if (state.page) window.location.href = targetUrl();
         });
         render();
       })();
