@@ -1,4 +1,4 @@
-/* Staff Cafe Prep: corporate look.
+/* McKellar Kitchen Prep: corporate look.
    Warm neutral page, deep berry accent, slab-serif headings, square-ish cards. */
 
 :root {
@@ -880,6 +880,17 @@ a {
   .hero .hero-title {
     font-size: 1.5rem;
     white-space: nowrap;
+  }
+}
+
+/* Very small phones (320px): shrink the day title and button so nothing overflows. */
+@media (max-width: 350px) {
+  .hero .hero-title {
+    font-size: 1.25rem;
+  }
+  .hero-btn {
+    padding: 6px 9px;
+    font-size: 0.85rem;
   }
 }
 
