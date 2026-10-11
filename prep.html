@@ -84,19 +84,42 @@
             grouped[section].forEach((item) => {
               const row = document.createElement("div");
               row.className = "list-item";
+
+              const main = document.createElement("div");
+              main.className = "item-main";
               const title = document.createElement(item.dishSlug ? "a" : "span");
               if (item.dishSlug) {
                 title.href = `dish.html?dish=${encodeURIComponent(item.dishSlug)}`;
               }
               title.textContent = item.item;
-              row.appendChild(title);
+              main.appendChild(title);
+
+              if (item.qty) {
+                const qty = document.createElement("span");
+                qty.className = "qty";
+                qty.textContent = item.qty;
+                main.appendChild(qty);
+              }
+
+              if (item.notes) {
+                const notes = document.createElement("div");
+                notes.className = "item-notes";
+                notes.textContent = item.notes;
+                main.appendChild(notes);
+              }
 
               if (item.location) {
-                const badge = document.createElement("span");
-                badge.className = "badge";
-                badge.textContent = item.location;
-                row.appendChild(badge);
+                const locs = document.createElement("div");
+                locs.className = "badges";
+                item.location.split(" | ").forEach((loc) => {
+                  const badge = document.createElement("span");
+                  badge.className = "badge";
+                  badge.textContent = loc.trim();
+                  locs.appendChild(badge);
+                });
+                main.appendChild(locs);
               }
+              row.appendChild(main);
 
               if (item.usageNote) {
                 const note = document.createElement("span");

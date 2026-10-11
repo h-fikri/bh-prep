@@ -1,68 +1,3719 @@
 [
   {
-    "dishSlug": "beef-lasagne",
-    "dishName": "Beef Lasagne",
-    "ingredient": "Beef Mince 90% Lean",
-    "amountText": "15 kg"
+    "dishSlug": "apricot-chicken",
+    "dishName": "Apricot Chicken",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Breast Fillet Skin Off 140g",
+        "amountText": "300 each"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "4 L"
+      },
+      {
+        "ingredient": "Apricots Dried",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Nectar Apricot",
+        "amountText": "8 L"
+      },
+      {
+        "ingredient": "Soup Powder French Onion",
+        "amountText": "300 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "baked-fish-bechamel-herb-crumb",
+    "dishName": "Baked Fish, bechamel herb crumb",
+    "ingredients": [
+      {
+        "ingredient": "Fish Basa Fillet Frozen",
+        "amountText": "300 serve"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "12 L"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "2 kg",
+        "notes": "Unit corrected by hand from Gram to kg"
+      },
+      {
+        "ingredient": "Pesto Basil",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Breadcrumbs",
+        "amountText": "2 kg",
+        "notes": "Unit corrected by hand from Gram to kg"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "3 bunch"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "120 g"
+      }
+    ],
+    "notes": [
+      "Sticky note: 10 trays / 200 / CHECK LIST ON BOARD; Handwritten: Herbcrumbs mix: 2 kg mix : 400 serve. Freeze the leftover."
+    ]
+  },
+  {
+    "dishSlug": "beef-and-rice-meatball",
+    "dishName": "Beef and Rice Meatball",
+    "ingredients": [
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Rice Arborio",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "125 g"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "15 each"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "6 L"
+      },
+      {
+        "ingredient": "Soup Tomato A10",
+        "amountText": "12 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "beef-burgundy",
+    "dishName": "Beef Burgundy",
+    "ingredients": [
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "150 mL"
+      },
+      {
+        "ingredient": "Carrot Diced Fresh Prepared",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Celery Fresh Sliced",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Beef Blade Diced 15mm",
+        "amountText": "25 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "150 mL"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "9 kg"
+      },
+      {
+        "ingredient": "Red Wine Bulk",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "8 L"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Basil Fresh",
+        "amountText": "180 g"
+      },
+      {
+        "ingredient": "Thyme Dried",
+        "amountText": "50 g",
+        "notes": "Handwritten change: \"Fresh\" crossed out and replaced with \"dried\"; amount changed to 50 (original struck out)"
+      },
+      {
+        "ingredient": "Lemon Fresh",
+        "amountText": "3 each"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "125 g"
+      }
+    ],
+    "notes": [
+      "NOTE: Remove required amount for texture modification diets and modify accordingly."
+    ]
+  },
+  {
+    "dishSlug": "beef-burrito",
+    "dishName": "Beef Burrito",
+    "ingredients": [
+      {
+        "ingredient": "Tortilla - Pkt/12 (8 Inch)",
+        "amountText": "8 pkt (12)",
+        "notes": "Printed amount covered by handwriting that ends in '= 8' with a tick; also circled '100 make' - please verify"
+      },
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Mexican Chilli Powder",
+        "amountText": "25 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "25 g"
+      },
+      {
+        "ingredient": "Paprika Sweet Ground",
+        "amountText": "25 g"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "250 mL"
+      },
+      {
+        "ingredient": "Corn Kernels Frozen",
+        "amountText": "500 g"
+      },
+      {
+        "ingredient": "Boiled Rice",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Beans Red Kidney A10",
+        "amountText": "0.5 can (3kg)"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "1 kg"
+      }
+    ]
   },
   {
     "dishSlug": "beef-lasagne",
     "dishName": "Beef Lasagne",
-    "ingredient": "Pasta Sheets",
-    "amountText": "4 trays"
+    "ingredients": [
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "15 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "500 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Red Wine Bulk",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "20 L"
+      },
+      {
+        "ingredient": "Pasta Lasagne Sheets",
+        "amountText": "70 sheets",
+        "notes": "Printed 30 is circled with a handwritten 7 in front (reads as 70) - please verify"
+      }
+    ]
   },
   {
-    "dishSlug": "beef-lasagne",
-    "dishName": "Beef Lasagne",
-    "ingredient": "Shredded Mozzarella",
-    "amountText": "3 kg"
+    "dishSlug": "beef-pastitsio",
+    "dishName": "Beef Pastitsio",
+    "ingredients": [
+      {
+        "ingredient": "Pasta Macaroni",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "10 each"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Red Wine Bulk",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "0.5 can (3kg)"
+      },
+      {
+        "ingredient": "Stock Beef Powder",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Nutmeg",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "Cinnamon Ground",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "10 L"
+      },
+      {
+        "ingredient": "Breadcrumbs",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "500 g"
+      }
+    ],
+    "notes": [
+      "Handwritten: x 5 tray(s) - cut off at the edge of the photo",
+      "Remove required amount for texture modification and modify accordingly"
+    ]
   },
   {
-    "dishSlug": "vegetable-curry",
-    "dishName": "Vegetable Curry",
-    "ingredient": "Mixed Vegetables",
-    "amountText": "10 kg"
+    "dishSlug": "beef-rissoles-onion-gravy",
+    "dishName": "Beef Rissoles, Onion Gravy",
+    "ingredients": [
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "7 kg"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "25 each"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "120 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "120 g"
+      },
+      {
+        "ingredient": "Gravy",
+        "amountText": "12 L",
+        "notes": "Smudged mark beside the name on the sheet (likely a sub-recipe)"
+      },
+      {
+        "ingredient": "Onion Diced Fresh Prepared",
+        "amountText": "4 kg"
+      }
+    ]
   },
   {
-    "dishSlug": "vegetable-curry",
-    "dishName": "Vegetable Curry",
-    "ingredient": "Coconut Milk",
-    "amountText": "6 L"
+    "dishSlug": "beef-stroganoff",
+    "dishName": "Beef Stroganoff",
+    "ingredients": [
+      {
+        "ingredient": "Beef Stroganoff Cut",
+        "amountText": "25 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "350 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "350 mL"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Mushrooms Button Whole",
+        "amountText": "8 kg"
+      },
+      {
+        "ingredient": "Sour Cream Light",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "4 bunch"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "8 L"
+      }
+    ]
   },
   {
-    "dishSlug": "chicken-stir-fry",
-    "dishName": "Chicken Stir Fry",
-    "ingredient": "Chicken Thigh",
-    "amountText": "12 kg"
+    "dishSlug": "beef-tomato-and-vegetable-mince",
+    "dishName": "Beef Tomato & Vegetable Mince",
+    "ingredients": [
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Sauce Worcestershire",
+        "amountText": "500 mL"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Vegetables Mixed Frozen",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Peas Frozen",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "4 L"
+      }
+    ]
   },
   {
-    "dishSlug": "chicken-stir-fry",
-    "dishName": "Chicken Stir Fry",
-    "ingredient": "Stir Fry Vegetables",
-    "amountText": "8 kg"
+    "dishSlug": "butter-chicken",
+    "dishName": "Butter Chicken",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Maryland Skin Off - Diced 15mm",
+        "amountText": "25 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Paste Sambal Oelek Hot Chilli",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Yoghurt Natural Greek Style Bulk",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "9 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "7 L"
+      },
+      {
+        "ingredient": "Paste Butter Chicken",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      }
+    ],
+    "notes": [
+      "Minced diet: put the required amount of casserole through the mincer. Pureed diet: put the required amount in the puree machine with potato flakes until smooth and lump free (sheet text is cut off in the photo)."
+    ]
   },
   {
-    "dishSlug": "apple-crumble",
-    "dishName": "Apple Crumble",
-    "ingredient": "Apple Slices",
-    "amountText": "10 kg"
+    "dishSlug": "chicken-and-mushroom-casserole",
+    "dishName": "Chicken and Mushroom Casserole",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Maryland Skin Off - Diced 15mm",
+        "amountText": "35 kg"
+      },
+      {
+        "ingredient": "Onion Sliced Fresh Prepared",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Mushrooms Button Whole",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "145 g"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "6 L"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "150 mL"
+      }
+    ],
+    "notes": [
+      "Remove required amount for texture modification diets and modify accordingly"
+    ]
   },
   {
-    "dishSlug": "apple-crumble",
-    "dishName": "Apple Crumble",
-    "ingredient": "Crumble Mix",
-    "amountText": "6 kg"
+    "dishSlug": "chicken-and-mushroom-pie",
+    "dishName": "Chicken and Mushroom Pie",
+    "ingredients": [
+      {
+        "ingredient": "Chicken & Mushroom Pie",
+        "amountText": "20 pc"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
   },
   {
-    "dishSlug": "pumpkin-soup",
-    "dishName": "Pumpkin Soup",
-    "ingredient": "Pumpkin",
-    "amountText": "15 kg"
+    "dishSlug": "chicken-korma",
+    "dishName": "Chicken Korma",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Maryland Skin Off - Diced 15mm",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Paste Curry Korma",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "1.5 L"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "2.5 L"
+      },
+      {
+        "ingredient": "Tumeric Ground",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "1.5 bunch"
+      }
+    ],
+    "notes": [
+      "Handwritten on sheet: Revised 24/11/25"
+    ]
   },
   {
-    "dishSlug": "pumpkin-soup",
-    "dishName": "Pumpkin Soup",
-    "ingredient": "Vegetable Stock",
-    "amountText": "8 L"
+    "dishSlug": "chicken-schnitzel-with-gravy",
+    "dishName": "Chicken Schnitzel with Gravy",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Schnitzel",
+        "amountText": "2 box"
+      },
+      {
+        "ingredient": "Chicken Schnitzel",
+        "amountText": "3 bag"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "chicken-singapore-noodles",
+    "dishName": "Chicken Singapore Noodles",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Stir Fry Strips",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Noodles Singapore Frozen",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Carrot Prepared Julienne",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Water Chestnuts",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "2 bunch (250g)"
+      },
+      {
+        "ingredient": "Sauce Hoi Sin",
+        "amountText": "1 can (2.3kg)"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 10mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Curry Powder Bulk",
+        "amountText": "80 g"
+      },
+      {
+        "ingredient": "Bean Sprouts",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      }
+    ],
+    "notes": [
+      "NOTE*: Take required amount for texture modification diets and modify accordingly."
+    ]
+  },
+  {
+    "dishSlug": "chicken-spinach-bake",
+    "dishName": "Chicken Spinach Bake",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Maryland Skin Off - Diced 15mm",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "16 L"
+      },
+      {
+        "ingredient": "Spinach Chopped Frozen",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "2 L"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Pasta Macaroni",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Stock Chicken Powder",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "150 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chicken-w-creamy-pesto-sauce",
+    "dishName": "Chicken w Creamy Pesto Sauce",
+    "ingredients": [
+      {
+        "ingredient": "Oil Canola Spray",
+        "amountText": "0.5 can (450g)"
+      },
+      {
+        "ingredient": "Cajun Seasoning",
+        "amountText": "300 g"
+      },
+      {
+        "ingredient": "Chicken Breast Fillet Skin On 140g",
+        "amountText": "300 each"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "5 L"
+      },
+      {
+        "ingredient": "Pesto Basil",
+        "amountText": "2 tub (1kg)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 L"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "100 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chickpea-and-lentil-pattie",
+    "dishName": "Chickpea & Lentil Pattie",
+    "ingredients": [
+      {
+        "ingredient": "Pattie",
+        "amountText": "10 pc",
+        "notes": "Cut up"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "chickpea-and-potato-curry",
+    "dishName": "Chickpea & Potato Curry",
+    "ingredients": [
+      {
+        "ingredient": "Potato Diced Fresh",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Chickpeas Canned",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "2 can (3kg)"
+      },
+      {
+        "ingredient": "Stock Vegetable Powder",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "5 L"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "2 bunch (250g)"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "20 g"
+      },
+      {
+        "ingredient": "Spice blend",
+        "amountText": ""
+      },
+      {
+        "ingredient": "Curry Powder Bulk",
+        "amountText": "70 g"
+      },
+      {
+        "ingredient": "Nutmeg",
+        "amountText": "15 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "15 g"
+      },
+      {
+        "ingredient": "Salt Table",
+        "amountText": "15 g"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "15 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chickpea-and-vegetable-stew",
+    "dishName": "Chickpea and Vegetable Stew",
+    "ingredients": [
+      {
+        "ingredient": "Ratatouille",
+        "amountText": "10 kg",
+        "notes": "LR marker on sheet (linked recipe)"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "9 kg",
+        "notes": "Handwritten change (printed 8 Kilogram crossed out)"
+      },
+      {
+        "ingredient": "Chick Peas Canned",
+        "amountText": "5 kg",
+        "notes": "Handwritten change (printed 2 Kilogram crossed out)"
+      },
+      {
+        "ingredient": "Seasoning Moroccan",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "1 kg",
+        "notes": "Handwritten addition"
+      },
+      {
+        "ingredient": "Basil",
+        "amountText": "1 bunch",
+        "notes": "Handwritten addition"
+      },
+      {
+        "ingredient": "Paste Tomato",
+        "amountText": "0.5 tin",
+        "notes": "Handwritten addition (written 1/2 tin)"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chilli-con-vegie",
+    "dishName": "Chilli Con Vegie",
+    "ingredients": [
+      {
+        "ingredient": "Sweet Potato 20mm",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Pepper Cayenne",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "70 g"
+      },
+      {
+        "ingredient": "Cinnamon Ground",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "500 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 10mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Beans Red Kidney A10",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Juice Lemon",
+        "amountText": "300 mL"
+      },
+      {
+        "ingredient": "Chilli Flakes",
+        "amountText": "50 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "cottage-pie",
+    "dishName": "Cottage Pie",
+    "ingredients": [
+      {
+        "ingredient": "Potato Flakes Dehydrated",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "25 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Carrots Diced Frozen",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Celery Fresh Sliced",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Peas Frozen",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "4 L"
+      },
+      {
+        "ingredient": "Red Wine Bulk",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Margarine Polyunsaturated",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Milk Fresh Light",
+        "amountText": "8 L"
+      },
+      {
+        "ingredient": "Paprika Sweet Ground",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "1 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "creamy-tuscan-chicken-pasta-bake",
+    "dishName": "Creamy Tuscan Chicken Pasta Bake",
+    "ingredients": [
+      {
+        "ingredient": "Pasta Bowtie",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Chicken Maryland Skin Off - Diced 15mm",
+        "amountText": "15 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "300 mL"
+      },
+      {
+        "ingredient": "Bacon Rashers Middle Rindless",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1 bag (1kg)",
+        "notes": "Amount partly covered by ink on the sheet - confirm on the printed copy"
+      },
+      {
+        "ingredient": "Tomatoes Semi-dried",
+        "amountText": "1 bkt (2kg)",
+        "notes": "Amount partly covered by ink on the sheet - confirm on the printed copy"
+      },
+      {
+        "ingredient": "Spinach Chopped Frozen",
+        "amountText": "1 kg",
+        "notes": "Amount partly covered by ink on the sheet - confirm on the printed copy"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Wine White Bulk",
+        "amountText": "1 L",
+        "notes": "Amount partly covered by ink on the sheet - confirm on the printed copy"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "7.2 L"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "3 L"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Stock Chicken Powder",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "1 kg",
+        "notes": "Amount partly covered by ink on the sheet - confirm on the printed copy"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 kg",
+        "notes": "Amount partly covered by ink on the sheet - confirm on the printed copy"
+      }
+    ],
+    "notes": [
+      "CHANGE 28/10/25 (handwritten in red)"
+    ]
+  },
+  {
+    "dishSlug": "crumbed-fish-with-lemon",
+    "dishName": "Crumbed Fish with Lemon",
+    "ingredients": [
+      {
+        "ingredient": "Crumbed fish",
+        "amountText": "15 box"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "crumbed-whiting",
+    "dishName": "Crumbed Whiting",
+    "ingredients": [
+      {
+        "ingredient": "Crumbed fish",
+        "amountText": "15 box"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "curried-sausages",
+    "dishName": "Curried Sausages",
+    "ingredients": [
+      {
+        "ingredient": "Sausages Beef Bbq Thin",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Curry Powder Bulk",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Paprika Sweet Ground",
+        "amountText": "100 g",
+        "notes": "Amount handwritten on sheet"
+      },
+      {
+        "ingredient": "Vegetables Panache Mix Frozen",
+        "amountText": "1 ctn (6x1.5kg)",
+        "notes": "Amount handwritten on sheet"
+      },
+      {
+        "ingredient": "Vegetable Mix Stir Fry Red",
+        "amountText": "5 kg",
+        "notes": "Amount handwritten on sheet"
+      },
+      {
+        "ingredient": "Chicken Style Broth",
+        "amountText": "8 L",
+        "notes": "Amount handwritten on sheet"
+      },
+      {
+        "ingredient": "Chutney Fruit",
+        "amountText": "2.3 kg",
+        "notes": "Amount handwritten on sheet"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "1 L",
+        "notes": "Amount and unit handwritten on sheet (litre)"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "200 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "falafel-cut-up",
+    "dishName": "Falafel – cut up",
+    "ingredients": [
+      {
+        "ingredient": "Falafel (frozen)",
+        "amountText": "1 bag",
+        "notes": "Cut up"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "fish-with-golden-coconut-sauce",
+    "dishName": "Fish with Golden Coconut Sauce",
+    "ingredients": [
+      {
+        "ingredient": "Fish Basa Fillet Frozen",
+        "amountText": "225 serve"
+      },
+      {
+        "ingredient": "Coconut Milk",
+        "amountText": "7.5 L",
+        "notes": "Handwritten: 19 cans"
+      },
+      {
+        "ingredient": "Tumeric Ground",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Stock Chicken Powder",
+        "amountText": "75 g"
+      },
+      {
+        "ingredient": "Sauce Fish",
+        "amountText": "38 mL"
+      },
+      {
+        "ingredient": "Juice Lemon",
+        "amountText": "38 mL"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "1.5 bunch"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "75 g"
+      }
+    ],
+    "notes": [
+      "Handwritten: pour over fish.",
+      "Handwritten: \"Trays\" note beside the ingredient list (number scribbled out, illegible)."
+    ]
+  },
+  {
+    "dishSlug": "gnocchi-bake",
+    "dishName": "Gnocchi Bake",
+    "ingredients": [
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Pasta Gnocchi",
+        "amountText": "10 pkt (500g)"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1 bag (1kg)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Sugar Brown",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Spinach Chopped Frozen",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Basil Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "5 kg",
+        "notes": "Handwritten 5 (printed amount scribbled out); smudged mark beside the name (likely a sub-recipe)"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "20 g"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded",
+        "amountText": "1 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "grilled-sausages-onion-gravy",
+    "dishName": "Grilled Sausages, onion gravy",
+    "ingredients": [
+      {
+        "ingredient": "Sausage",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "3 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "herb-crusted-chicken",
+    "dishName": "Herb Crusted Chicken",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Breast Fillet Skin Off 140g",
+        "amountText": "300 each"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "90 g"
+      },
+      {
+        "ingredient": "Thyme Fresh",
+        "amountText": "210 g"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "75 g"
+      },
+      {
+        "ingredient": "Breadcrumbs",
+        "amountText": "2.5 kg",
+        "notes": "Handwritten amount"
+      },
+      {
+        "ingredient": "Margarine Polyunstaurated",
+        "amountText": "2 kg",
+        "notes": "Handwritten amount"
+      }
+    ],
+    "notes": [
+      "NOTE* Remove required amount for texture modification diets and modify accordingly.",
+      "Handwritten: 12 Trays.",
+      "Handwritten: \"Prep\" (written beside the title)."
+    ]
+  },
+  {
+    "dishSlug": "honey-pepper-beef-prep-for-friday",
+    "dishName": "Honey Pepper Beef – PREP for Friday",
+    "ingredients": [
+      {
+        "ingredient": "Beef Stroganoff Cut",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Onion Diced Fresh Prepared",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 20mm",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Vegetable Mix Stir Fry Red",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "3 bunch (250g)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Sauce Honey Soy Chinese",
+        "amountText": "3 bottle (2.1litre)"
+      },
+      {
+        "ingredient": "Honey Bulk",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "2 L"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "100 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "indian-butter-chickpea",
+    "dishName": "Indian Butter Chickpea",
+    "ingredients": [
+      {
+        "ingredient": "Chick Peas Canned",
+        "amountText": "5 can (2.5kg)"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 bag (1kg)"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Paste Sambal Oelek Hot Chilli",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Yoghurt Natural Greek Style Bulk",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "2.5 L"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Paste Butter Chicken",
+        "amountText": "1 jar (1.15kg)"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "30 mL"
+      }
+    ]
+  },
+  {
+    "dishSlug": "indian-vegetable-curry",
+    "dishName": "Indian Vegetable Curry",
+    "ingredients": [
+      {
+        "ingredient": "Lentils Red",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Carrots Diced Frozen",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "50 mL"
+      },
+      {
+        "ingredient": "Onion Diced Fresh Prepared",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Potato Diced Fresh",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Zucchini Diced 10mm",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Broccoli Stems Diced Fresh 10mm",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "1 bunch"
+      },
+      {
+        "ingredient": "Paste Curry Korma",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "5 L"
+      }
+    ]
+  },
+  {
+    "dishSlug": "italian-pork-casserole",
+    "dishName": "Italian Pork Casserole",
+    "ingredients": [
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "500 mL"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Pork Shoulder Diced 15mm",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "4 bag (1kg)"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 10mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Mushrooms Button Whole",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Wine White Bulk",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "2 bunch"
+      }
+    ]
+  },
+  {
+    "dishSlug": "jacket-potato-with-mexican-beans",
+    "dishName": "Jacket Potato with Mexican Beans",
+    "ingredients": [
+      {
+        "ingredient": "Oil Canola Spray",
+        "amountText": "0.1 can (450g)"
+      },
+      {
+        "ingredient": "Potato Whole Large Skin On Fresh",
+        "amountText": "16 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "400 mL"
+      },
+      {
+        "ingredient": "Red Onion Diced Fresh Prepared",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 10mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Mexican Chilli Powder",
+        "amountText": "20 g",
+        "notes": "Handwritten 20; printed 40 struck out"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Beans Red Kidney A10",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded",
+        "amountText": "1.6 kg"
+      },
+      {
+        "ingredient": "Corn Kernels Frozen",
+        "amountText": "1 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "lamb-potato-casserole",
+    "dishName": "Lamb Potato Casserole",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "20 kg",
+        "notes": "Title has handwritten \"/ casserole\""
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "250 mL"
+      },
+      {
+        "ingredient": "Onion Sliced Fresh Prepared",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Potato Diced Fresh",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "7.5 L"
+      },
+      {
+        "ingredient": "Carrots Diced Frozen",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1.25 kg"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "90 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "lamb-rogan-josh",
+    "dishName": "Lamb Rogan Josh",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Paste Rogan Josh",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "6 L"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "9 kg"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "500 g"
+      }
+    ],
+    "notes": [
+      "NOTE* Remove required amount for texture modification diets and modify accordingly."
+    ]
+  },
+  {
+    "dishSlug": "lamb-apricot-and-vegetable-casserole",
+    "dishName": "Lamb, Apricot & Vegetable Casserole",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "15 kg",
+        "notes": "Changed by hand (printed 16.667 crossed out)"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "67 mL"
+      },
+      {
+        "ingredient": "Apricot Halves In Juice A10",
+        "amountText": "4 kg",
+        "notes": "Printed note: 3kg tin of apricots yields 1.5kg drained weight"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 20mm",
+        "amountText": "1.333 kg"
+      },
+      {
+        "ingredient": "Vegetables Mixed Frozen",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Sweet Potato 20mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Cinnamon Ground",
+        "amountText": "33 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "67 g"
+      },
+      {
+        "ingredient": "Red Wine Bulk",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Honey Bulk",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "2 bunch",
+        "notes": "Amount written by hand over the printed one"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "4.667 L"
+      },
+      {
+        "ingredient": "Yoghurt Natural Greek Style Bulk",
+        "amountText": "2 kg",
+        "notes": "Amount written by hand over the printed one"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "lamb-bacon-onion-ragout",
+    "dishName": "Lamb, Bacon, Onion Ragout",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "25 kg"
+      },
+      {
+        "ingredient": "Bacon Rashers Middle Rindless",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Potato Diced Fresh",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "15 L"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      }
+    ],
+    "notes": [
+      "Printed note on sheet: Remove required amount for texture modification diets and modify accordingly."
+    ]
+  },
+  {
+    "dishSlug": "lentil-bolognaise",
+    "dishName": "Lentil Bolognaise",
+    "ingredients": [
+      {
+        "ingredient": "Lentils Red",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Pumpkin Grey Peeled Diced 10mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Carrots Diced Frozen",
+        "amountText": "1 bag (2kg)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "150 mL"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "5 L"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "20 g"
+      },
+      {
+        "ingredient": "Pasta Shells",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Stock Vegetable Powder",
+        "amountText": "60 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "lentil-dahl",
+    "dishName": "Lentil Dahl",
+    "ingredients": [
+      {
+        "ingredient": "Butter Salted Bulk",
+        "amountText": "2 pkt (500g)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 bag (1kg)"
+      },
+      {
+        "ingredient": "Tumeric Ground",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Pepper Cayenne",
+        "amountText": "15 g"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Green Lentils",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "20 g"
+      },
+      {
+        "ingredient": "Coconut Milk",
+        "amountText": "2 L",
+        "notes": "Handwritten: = 5 x 400 ml"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "10 L"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "200 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "macaroni-bolognaise",
+    "dishName": "Macaroni Bolognaise",
+    "ingredients": [
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "10 kg",
+        "notes": "Handwritten correction to 10 kg (printed 11.25 Kilogram crossed out)"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "75 g"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "75 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "9 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "1.5 L"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "2.25 kg"
+      },
+      {
+        "ingredient": "Pasta Macaroni",
+        "amountText": "4.5 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "macaroni-cheese",
+    "dishName": "Macaroni Cheese",
+    "ingredients": [
+      {
+        "ingredient": "Pasta Macaroni",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "150 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "1 kg",
+        "notes": "Listed twice on the sheet (also 2 kg below)"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "9 L"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "2 kg",
+        "notes": "Listed twice on the sheet (also 1 kg above)"
+      }
+    ],
+    "notes": [
+      "NOTE*: Remove required amount for texture modification diets, and modify accordingly."
+    ]
+  },
+  {
+    "dishSlug": "meat-loaf",
+    "dishName": "Meat Loaf",
+    "ingredients": [
+      {
+        "ingredient": "Sausage Meat Beef",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Peas Frozen",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 20mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "25 each"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "50 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "meatballs-in-creamy-sundried-tomato-sauce",
+    "dishName": "Meatballs in Creamy Sundried Tomato Sauce",
+    "ingredients": [
+      {
+        "ingredient": "Meatballs Beef Cooked Frozen",
+        "amountText": "27 pkt (1kg)",
+        "notes": "Handwritten, reads as 27; printed 24 struck out - confirm"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "15 L"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "10 L"
+      },
+      {
+        "ingredient": "Tomatoes Semi-dried",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "3 kg",
+        "notes": "Handwritten 3 kg; printed amount struck out"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Stock Chicken Powder",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 pkt (1kg)"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "1 bunch"
+      }
+    ]
+  },
+  {
+    "dishSlug": "mediterranean-chicken-meatball",
+    "dishName": "Mediterranean Chicken Meatball",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Mince",
+        "amountText": "25 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 bag (1kg)"
+      },
+      {
+        "ingredient": "Tomatoes Semi-dried",
+        "amountText": "2 kg",
+        "notes": "Handwritten 2 kg; printed 1500 g crossed out"
+      },
+      {
+        "ingredient": "Cheese Feta",
+        "amountText": "1 tub (2kg)"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "15 each"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Salt Table",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Breadcrumbs",
+        "amountText": "1 kg"
+      }
+    ],
+    "notes": [
+      "Handwritten: 2 kg (replaces crossed-out 1500 g) on Tomatoes Semi-dried"
+    ]
+  },
+  {
+    "dishSlug": "moroccan-lamb-tagine",
+    "dishName": "Moroccan Lamb Tagine",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "15 kg"
+      },
+      {
+        "ingredient": "Seasoning Moroccan",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Carrot Diced Fresh Prepared",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Chick Peas Canned",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Apricots Dried",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Honey Bulk",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Onion Sliced Fresh Prepared",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "7 L"
+      },
+      {
+        "ingredient": "Potato Diced Fresh",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "50 g"
+      }
+    ],
+    "notes": [
+      "Remove required amount for texture modification diets and modify accordingly"
+    ]
+  },
+  {
+    "dishSlug": "mushroom-risotto",
+    "dishName": "Mushroom Risotto",
+    "ingredients": [
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Rice Arborio",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 bag (1kg)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Mushrooms Button Whole",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Stock Vegetable Powder",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "30 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "1 bunch"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "2 L"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "6.5 L"
+      }
+    ]
+  },
+  {
+    "dishSlug": "pasta-carbonara",
+    "dishName": "Pasta Carbonara",
+    "ingredients": [
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 kg",
+        "notes": "Changed by hand (printed ~1.5 crossed out)"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "24 each",
+        "notes": "Changed by hand (printed ~30 crossed out)"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "10 L",
+        "notes": "Changed by hand (printed ~15 crossed out)"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "70 g",
+        "notes": "Changed by hand (printed ~90 crossed out)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g",
+        "notes": "Changed by hand (printed ~225 crossed out)"
+      },
+      {
+        "ingredient": "Ham Sliced",
+        "amountText": "3 kg",
+        "notes": "Changed by hand (printed ~4.5 crossed out)"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "150 mL"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Pasta Bowtie",
+        "amountText": "3.5 kg",
+        "notes": "Changed by hand (printed ~5.25 crossed out)"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "48 each"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "20 L"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "120 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "300 g"
+      },
+      {
+        "ingredient": "Ham Sliced",
+        "amountText": "6 kg",
+        "notes": "Handwritten: +1 kg (see recipe note)"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Pasta Bowtie",
+        "amountText": "7 kg",
+        "notes": "Handwritten: +1 kg (see recipe note)"
+      }
+    ],
+    "notes": [
+      "Amounts were changed by hand on the sheet; the handwritten values are used here. Crossed-out printed values are hard to read, so they are approximate.; Handwritten: +1 kg Pasta, ham"
+    ]
+  },
+  {
+    "dishSlug": "pasta-meatballs-in-tomato-sauce",
+    "dishName": "Pasta Meatballs in Tomato Sauce",
+    "ingredients": [
+      {
+        "ingredient": "Meatball",
+        "amountText": "15 kg"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "penang-lamb",
+    "dishName": "Penang Lamb",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "15 kg"
+      },
+      {
+        "ingredient": "Garam Masala",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Tumeric Ground",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Onion Sliced Fresh Prepared",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Coconut Milk",
+        "amountText": "3 L"
+      },
+      {
+        "ingredient": "Stock Beef Powder",
+        "amountText": "80 g"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "7 L"
+      },
+      {
+        "ingredient": "Broccoli Stems Diced Fresh 10mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "100 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "pepper-steak-casserole",
+    "dishName": "Pepper Steak Casserole",
+    "ingredients": [
+      {
+        "ingredient": "Beef Stroganoff Cut",
+        "amountText": "40 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "400 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Evaporated Milk Light & Creamy",
+        "amountText": "5 kg",
+        "notes": "Handwritten: 15 cans"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "9 L"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "400 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "300 g"
+      }
+    ],
+    "notes": [
+      "NOTE* Remove required amount for texture modification diets and modify accordingly."
+    ]
+  },
+  {
+    "dishSlug": "pesto-pasta",
+    "dishName": "Pesto Pasta",
+    "ingredients": [
+      {
+        "ingredient": "Pasta Shells",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Pesto Basil",
+        "amountText": "1 tub (2kg)"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "400 mL"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Tomatoes Cherry",
+        "amountText": "8 punnet (250g)"
+      },
+      {
+        "ingredient": "Basil Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Chilli Flakes",
+        "amountText": "10 g",
+        "notes": "Printed 20 crossed out; changed by hand to 10"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "600 g"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "2 L"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "10 g",
+        "notes": "Printed 20 crossed out; changed by hand to 10"
+      }
+    ]
+  },
+  {
+    "dishSlug": "pork-and-veal-meatloaf",
+    "dishName": "Pork & Veal Meatloaf",
+    "ingredients": [
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Pork Mince",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 20mm",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "25 each"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "250 mL"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "500 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "500 g"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "100 g"
+      }
+    ],
+    "notes": [
+      "NB: This meat loaf gets made in 2 batches."
+    ]
+  },
+  {
+    "dishSlug": "ratatouille-with-beans",
+    "dishName": "Ratatouille with Beans",
+    "ingredients": [
+      {
+        "ingredient": "Ratatouille Mix 20mm",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "3 can (2.5kg)"
+      },
+      {
+        "ingredient": "Olives Kalamata Pitted",
+        "amountText": "1 jar (2kg)"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "75 g"
+      },
+      {
+        "ingredient": "Basil Fresh",
+        "amountText": "1 bunch"
+      },
+      {
+        "ingredient": "Thyme Dried",
+        "amountText": "40 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "roast-beef",
+    "dishName": "Roast Beef",
+    "ingredients": [
+      {
+        "ingredient": "Roast Beef",
+        "amountText": "2 bag",
+        "notes": "Cut up, no gravy"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "roast-chicken-with-creamy-mushroom-sauce",
+    "dishName": "Roast Chicken with creamy mushroom sauce",
+    "ingredients": [
+      {
+        "ingredient": "Chicken Breast Fillet Skin On 140g",
+        "amountText": "300 each"
+      },
+      {
+        "ingredient": "Cajun Seasoning",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "1.5 L"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Mushrooms Button Whole",
+        "amountText": "4 kg"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "2 bottle (5lt)"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Garlic Crushed",
+        "amountText": "100 g"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Thyme Dried",
+        "amountText": "50 g"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "200 mL"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "300 g"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Pepper White Ground",
+        "amountText": "20 g"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Salt Table",
+        "amountText": "50 g"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "Stock Chicken Powder",
+        "amountText": "80 g"
+      },
+      {
+        "group": "Mushroom Sauce",
+        "ingredient": "White Sauce",
+        "amountText": "6 L",
+        "notes": "LR marker on sheet (linked recipe)"
+      }
+    ]
+  },
+  {
+    "dishSlug": "roast-lamb",
+    "dishName": "Roast Lamb",
+    "ingredients": [
+      {
+        "ingredient": "Roast Lamb",
+        "amountText": "2 bag",
+        "notes": "Cut up, no gravy"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "roast-pork-and-apple-sauce",
+    "dishName": "Roast Pork + Apple Sauce",
+    "ingredients": [
+      {
+        "ingredient": "Roast Pork",
+        "amountText": "4 bag",
+        "notes": "Cut up: 2 bags no gravy + 2 bags gravy"
+      },
+      {
+        "ingredient": "Apple Diced",
+        "amountText": "5 bag",
+        "notes": "For apple sauce"
+      }
+    ]
+  },
+  {
+    "dishSlug": "salmon-and-dill-risotto",
+    "dishName": "Salmon & Dill Risotto",
+    "ingredients": [
+      {
+        "ingredient": "Rice Arborio",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Wine Cooking White",
+        "amountText": "1 L"
+      },
+      {
+        "ingredient": "Stock Vegetable Powder",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Juice Lemon",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "5 L"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1 bag (1kg)"
+      },
+      {
+        "ingredient": "Salmon Fillet Pin Bone- Removed Skinless",
+        "amountText": "2 fillet (1.3-1.5kg)",
+        "notes": "Handwritten: cut + separate salmon (fresh + smoked)"
+      },
+      {
+        "ingredient": "Smoked Salmon",
+        "amountText": "2 pkt (1kg)",
+        "notes": "Handwritten: cut + separate salmon (fresh + smoked)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Cheese Parmesan Shredded",
+        "amountText": "1 pkt (1kg)"
+      },
+      {
+        "ingredient": "Cream Thickened Bulk",
+        "amountText": "3 L"
+      },
+      {
+        "ingredient": "Dill Fresh",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "20 g"
+      }
+    ],
+    "notes": [
+      "Handwritten on sheet: Cut + separate salmon. Salmon fresh + smoked"
+    ]
+  },
+  {
+    "dishSlug": "shepherd-s-pie",
+    "dishName": "Shepherd's Pie",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Mince 90% Lean",
+        "amountText": "19.2 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1.92 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "2.88 kg"
+      },
+      {
+        "ingredient": "Carrots Diced Frozen",
+        "amountText": "2.88 kg"
+      },
+      {
+        "ingredient": "Celery Fresh Diced",
+        "amountText": "1.92 kg"
+      },
+      {
+        "ingredient": "Rosemary Fresh",
+        "amountText": "96 g"
+      },
+      {
+        "ingredient": "Thyme Dried",
+        "amountText": "96 g"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1.44 kg"
+      },
+      {
+        "ingredient": "Red Wine Bulk",
+        "amountText": "960 mL"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "4.8 kg"
+      },
+      {
+        "ingredient": "Milk Fresh Full Cream",
+        "amountText": "19.2 L"
+      },
+      {
+        "ingredient": "Potato Flakes Dehydrated",
+        "amountText": "4.8 kg"
+      },
+      {
+        "ingredient": "Margarine Polyunstaurated",
+        "amountText": "480 g"
+      },
+      {
+        "ingredient": "Paprika Sweet Ground",
+        "amountText": "96 g"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded",
+        "amountText": "1.92 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "spinach-pumpkin-and-feta-fritter",
+    "dishName": "Spinach/Pumpkin & Feta Fritter",
+    "ingredients": [
+      {
+        "ingredient": "Fritter",
+        "amountText": "10 pc",
+        "notes": "Cut up"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "summer-lamb-vegetable-ragout",
+    "dishName": "Summer Lamb Vegetable Ragout",
+    "ingredients": [
+      {
+        "ingredient": "Lamb Leg Diced 15mm",
+        "amountText": "20 kg",
+        "notes": "Handwritten 20"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Carrot Diced Fresh Prepared",
+        "amountText": "3 kg",
+        "notes": "Handwritten 3"
+      },
+      {
+        "ingredient": "Mushrooms Button Whole",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Zucchini Fresh Batons",
+        "amountText": "2 kg",
+        "notes": "Handwritten 2"
+      },
+      {
+        "ingredient": "Green Beans Cross Cut Frozen",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Paprika Sweet Ground",
+        "amountText": "25 g"
+      },
+      {
+        "ingredient": "Rosemary Fresh",
+        "amountText": "60 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Gravy Mix Rich Brown Gf Bulk",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "7.5 L"
+      }
+    ]
+  },
+  {
+    "dishSlug": "sweet-potato-and-chickpea-curry",
+    "dishName": "Sweet Potato & Chickpea Curry",
+    "ingredients": [
+      {
+        "ingredient": "Sweet Potato 20mm",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1 kg",
+        "notes": "Handwritten correction to 1 kg (printed 750 Gram crossed out)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "20 g"
+      },
+      {
+        "ingredient": "Chick Peas Canned",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "20 g"
+      },
+      {
+        "ingredient": "Paste Sambal Oelek Hot Chilli",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "Sauce Soy",
+        "amountText": "45 mL"
+      },
+      {
+        "ingredient": "Juice Lemon",
+        "amountText": "10 mL"
+      },
+      {
+        "ingredient": "Curry Powder Bulk",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "Tumeric Ground",
+        "amountText": "10 g"
+      },
+      {
+        "ingredient": "Coconut Milk",
+        "amountText": "5 L",
+        "notes": "Handwritten: 13 x 400 ml"
+      },
+      {
+        "ingredient": "Spinach Baby Fresh",
+        "amountText": "1 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "sweet-potato-pattie",
+    "dishName": "Sweet Potato Pattie",
+    "ingredients": [
+      {
+        "ingredient": "Pattie",
+        "amountText": "10 pc",
+        "notes": "Cut up"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "thai-curry-meatball-in-coconut-sauce",
+    "dishName": "Thai Curry Meatball in Coconut Sauce",
+    "ingredients": [
+      {
+        "ingredient": "Pork Mince",
+        "amountText": "7.2 kg"
+      },
+      {
+        "ingredient": "Chicken Mince",
+        "amountText": "7.2 kg"
+      },
+      {
+        "ingredient": "Breadcrumbs",
+        "amountText": "1.44 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "43.2 each"
+      },
+      {
+        "ingredient": "Coriander Fresh",
+        "amountText": "7.2 bunch",
+        "notes": "Highlighted yellow. Handwritten: 2 bunch in sauce, 5 bunch in meatballs"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "360 g"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "360 g",
+        "notes": "Red star marked. Printed amount crossed out (printed unit Kilogram); handwritten 360 - assumed grams, please verify"
+      },
+      {
+        "ingredient": "Paste Curry Green",
+        "amountText": "180 g"
+      },
+      {
+        "ingredient": "Sauce Soy",
+        "amountText": "720 mL"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Paste Curry Green",
+        "amountText": "360 g"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Sauce Fish",
+        "amountText": "180 mL"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Gel It Instant Fruit",
+        "amountText": "360 g"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Sugar Brown",
+        "amountText": "360 g"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Coconut Milk",
+        "amountText": "6.48 L"
+      }
+    ],
+    "notes": [
+      "Handwritten at top right of the page, cut off in the photo (starts '120 ...') - not readable"
+    ]
+  },
+  {
+    "dishSlug": "thai-ginger-fish",
+    "dishName": "Thai Ginger Fish",
+    "ingredients": [
+      {
+        "ingredient": "Fish Basa Fillet Frozen",
+        "amountText": "199.62 serve"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Onion Sliced Fresh Prepared",
+        "amountText": "665 g"
+      },
+      {
+        "ingredient": "Zucchini Fresh Julienne",
+        "amountText": "2 kg",
+        "notes": "Printed amount crossed out; changed by hand to 2"
+      },
+      {
+        "ingredient": "Carrot Prepared Julienne",
+        "amountText": "2 kg",
+        "notes": "Printed amount crossed out; changed by hand to 2"
+      },
+      {
+        "ingredient": "Capsicum Green & Red Diced 10mm",
+        "amountText": "2 kg",
+        "notes": "Printed amount crossed out; changed by hand to 2"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "1.34 bunch (250g)"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Sauce Oyster",
+        "amountText": "0.67 can (1.75kg)"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Sauce Sweet & Sour",
+        "amountText": "1 jar (2.7kg)",
+        "notes": "Printed amount crossed out; changed by hand to 1"
+      },
+      {
+        "group": "Sauce",
+        "ingredient": "Tap Water",
+        "amountText": "665 mL"
+      }
+    ]
+  },
+  {
+    "dishSlug": "tofu-noodle-stirfry",
+    "dishName": "Tofu Noodle Stirfry",
+    "ingredients": [
+      {
+        "ingredient": "Tofu Hard",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Noodles Singapore Frozen",
+        "amountText": "3 pkt (1kg)"
+      },
+      {
+        "ingredient": "Carrot Prepared Julienne",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Water Chestnuts",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "2 bunch (250g)"
+      },
+      {
+        "ingredient": "Sauce Hoi Sin",
+        "amountText": "1 can (2.3kg)"
+      },
+      {
+        "ingredient": "Vegetable Mix Stir Fry Red",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Ginger Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Curry Powder Bulk",
+        "amountText": "50 g",
+        "notes": "Handwritten correction: 50 written over a crossed-out 25"
+      }
+    ]
+  },
+  {
+    "dishSlug": "tuna-mornay",
+    "dishName": "Tuna Mornay",
+    "ingredients": [
+      {
+        "ingredient": "Tuna Chunks In Spring Water Bulk",
+        "amountText": "18 kg"
+      },
+      {
+        "ingredient": "Egg Hard Boiled",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "250 g"
+      },
+      {
+        "ingredient": "Juice Lemon",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "24 L"
+      }
+    ],
+    "notes": [
+      "Handwritten: 5 trays (printed '12 trays' is crossed out)"
+    ]
+  },
+  {
+    "dishSlug": "veal-chicken-apricot-terrine",
+    "dishName": "Veal, Chicken Apricot Terrine",
+    "ingredients": [
+      {
+        "ingredient": "Bacon Rashers Middle Rindless",
+        "amountText": "1.667 kg"
+      },
+      {
+        "ingredient": "Beef Mince 90% Lean",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Chicken Mince",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Apricots Dried",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Wine White Bulk",
+        "amountText": "1.333 L"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "3.333 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "167 g"
+      },
+      {
+        "ingredient": "Parsley Curly",
+        "amountText": "80 g"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "33.34 each"
+      },
+      {
+        "ingredient": "Peppercorns Green In Water",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "133 mL"
+      }
+    ],
+    "notes": [
+      "Handwritten (red): CHANGE 28/10/25."
+    ]
+  },
+  {
+    "dishSlug": "vegetable-chow-mein",
+    "dishName": "Vegetable Chow Mein",
+    "ingredients": [
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "500 mL"
+      },
+      {
+        "ingredient": "Noodles Singapore Frozen",
+        "amountText": "3 pkt (1kg)"
+      },
+      {
+        "ingredient": "Vegetable Mix Stir Fry Red",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Cabbage Green Shredded",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Bean Sprouts",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Onion Spring Fresh",
+        "amountText": "1 bunch (250g)"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "27 g"
+      },
+      {
+        "ingredient": "Sauce Soy",
+        "amountText": "130 mL",
+        "notes": "Sauce"
+      },
+      {
+        "ingredient": "Chinese Cooking Wine",
+        "amountText": "60 mL",
+        "notes": "Sauce"
+      },
+      {
+        "ingredient": "Oil Sesame",
+        "amountText": "50 mL",
+        "notes": "Sauce"
+      },
+      {
+        "ingredient": "Sauce Hoi Sin",
+        "amountText": "1 tin (1.9kg)",
+        "notes": "Sauce"
+      },
+      {
+        "ingredient": "Chilli Flakes",
+        "amountText": "13 g",
+        "notes": "Sauce"
+      }
+    ]
+  },
+  {
+    "dishSlug": "vegetable-cottage-cheese-slice",
+    "dishName": "Vegetable Cottage Cheese Slice",
+    "ingredients": [
+      {
+        "ingredient": "Broccoli No Stem Diced Fresh 10mm",
+        "amountText": "3 kg",
+        "notes": "Handwritten 3 (printed amount covered)"
+      },
+      {
+        "ingredient": "Vegetables Mixed Frozen",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Zucchini Diced 10mm",
+        "amountText": "1.5 kg"
+      },
+      {
+        "ingredient": "Cottage Cheese",
+        "amountText": "6 tub (500g)"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "60 each"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Pepper White Ground",
+        "amountText": "20 g",
+        "notes": "Handwritten 20; printed 30 struck out"
+      }
+    ],
+    "notes": [
+      "3 TRAYS (handwritten); Please ensure we use the COTTAGE CHEESE ... this recipe not the ricotta. (sticker on sheet; edge cut off in photo)"
+    ]
+  },
+  {
+    "dishSlug": "vegetable-pattie",
+    "dishName": "Vegetable Pattie",
+    "ingredients": [
+      {
+        "ingredient": "Pattie",
+        "amountText": "10 pc",
+        "notes": "Cut up"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "vegetarian-lasagne",
+    "dishName": "Vegetarian Lasagne",
+    "ingredients": [
+      {
+        "ingredient": "Vegetable Mix Lasagne",
+        "amountText": "5 kg",
+        "notes": "Handwritten amount; printed value crossed out"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "30 mL"
+      },
+      {
+        "ingredient": "Pasta Lasagne Sheets",
+        "amountText": "30 sheets",
+        "notes": "Handwritten amount; printed value crossed out. Handwritten: 1/2 box"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Garlic Crushed",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Tomato Paste A10",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Herb Italian Dried",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "4.5 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "White Sauce",
+        "amountText": "8 L"
+      }
+    ],
+    "notes": [
+      "Handwritten next to Pasta Lasagne Sheets: 1/2 box"
+    ]
+  },
+  {
+    "dishSlug": "vegetarian-parmigiana",
+    "dishName": "Vegetarian Parmigiana",
+    "ingredients": [
+      {
+        "ingredient": "Premium Veg Schnitzel",
+        "amountText": "1 box"
+      },
+      {
+        "ingredient": "Tomato Concasse",
+        "amountText": "",
+        "notes": "Made in Week 2 Friday prep"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded",
+        "amountText": ""
+      }
+    ]
+  },
+  {
+    "dishSlug": "vegetarian-quiche-spinach",
+    "dishName": "Vegetarian Quiche – spinach",
+    "ingredients": [
+      {
+        "ingredient": "Quiche",
+        "amountText": "",
+        "notes": "Cut into 8"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "yellow-vegetable-and-tofu-curry",
+    "dishName": "Yellow Vegetable & Tofu Curry",
+    "ingredients": [
+      {
+        "ingredient": "Coconut Milk",
+        "amountText": "6 L",
+        "notes": "Handwritten: 15 cans"
+      },
+      {
+        "ingredient": "Potato Diced Fresh",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Butter Beans Frozen",
+        "amountText": "1 kg"
+      },
+      {
+        "ingredient": "Zucchini Diced 10mm",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Thai Basil",
+        "amountText": "2 bunch"
+      },
+      {
+        "ingredient": "Curry Paste Yellow",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Tofu Hard",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Sauce Soy",
+        "amountText": "50 mL"
+      },
+      {
+        "ingredient": "Cornflour",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Sugar Brown",
+        "amountText": "15 g"
+      },
+      {
+        "ingredient": "Tap Water",
+        "amountText": "200 mL"
+      }
+    ]
+  },
+  {
+    "dishSlug": "zucchini-and-corn-fritter-w-salsa",
+    "dishName": "Zucchini & Corn Fritter w Salsa",
+    "ingredients": [
+      {
+        "ingredient": "Fritter",
+        "amountText": "10 pc",
+        "notes": "Cut up"
+      }
+    ],
+    "notes": [
+      "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "zucchini-slice",
+    "dishName": "Zucchini Slice",
+    "ingredients": [
+      {
+        "ingredient": "Zucchini Fresh Julienne",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Carrot Prepared Julienne",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Onion Diced 5mm",
+        "amountText": "2.5 kg"
+      },
+      {
+        "ingredient": "Cheese Tasty Shredded Lite",
+        "amountText": "3 kg"
+      },
+      {
+        "ingredient": "Egg Fresh",
+        "amountText": "100 each"
+      },
+      {
+        "ingredient": "Oil Tuscan Blend",
+        "amountText": "100 mL"
+      },
+      {
+        "ingredient": "Salt Cooking",
+        "amountText": "25 g"
+      },
+      {
+        "ingredient": "Pepper Black Cracked",
+        "amountText": "50 g"
+      },
+      {
+        "ingredient": "Flour Self Raising Bulk",
+        "amountText": "2.5 kg"
+      }
+    ],
+    "notes": [
+      "NOTE* Remove amount for texture modification and modify accordingly.",
+      "Handwritten: use [crossed-out word] for mixing paddle.",
+      "Handwritten: use 5 greased trays."
+    ]
   }
 ]

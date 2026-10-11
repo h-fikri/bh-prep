@@ -209,6 +209,66 @@ textarea {
   font-weight: 700;
 }
 
+.season-tag {
+  text-align: center;
+  margin-top: -6px;
+  margin-bottom: 14px;
+}
+
+.item-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.item-notes {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.qty {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.list-item .note {
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.group-row td {
+  background: #f3f3f3;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.dish-notes {
+  margin-top: 16px;
+}
+
+.dish-notes h2 {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.dish-notes ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.back-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 @media (min-width: 640px) {
   body {
     padding: 32px;
