@@ -157,42 +157,87 @@
           });
         }
 
-        function renderFilters(items) {
-          const locations = buildLocationOptions(items);
-          if (!locations.length) {
-            filterPanel.innerHTML = "<p class='muted'>No location filters.</p>";
-            toggleFilterBtn.disabled = true;
-            toggleFilterBtn.textContent = "Filter";
-            return;
-          }
+        let selectedServes = [];
+        let selectedDishes = [];
+        const NO_SERVE = "No serve time";
 
-          const legend = document.createElement("p");
-          legend.className = "muted";
-          legend.textContent = "Filter by location:";
-          filterPanel.appendChild(legend);
-
-          locations.forEach((loc) => {
-            const label = document.createElement("label");
-            label.style.display = "flex";
-            label.style.alignItems = "center";
-            label.style.gap = "8px";
-            label.style.marginBottom = "6px";
-            const checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.value = loc;
-            checkbox.addEventListener("change", () => {
-              if (checkbox.checked) {
-                selectedLocations.push(loc);
-              } else {
-                selectedLocations = selectedLocations.filter((x) => x !== loc);
-              }
-              const filtered = filterByLocations(allItems, selectedLocations);
-              renderList(filtered);
-            });
-            label.appendChild(checkbox);
-            label.appendChild(document.createTextNode(loc));
-            filterPanel.appendChild(label);
+        // Serve and dish filters only touch MAINS. Veg, soups and prep are never hidden by them.
+        function applyFilters() {
+          let items = filterByLocations(allItems, selectedLocations);
+          items = items.filter((item) => {
+            if (item.section !== "MAINS") return true;
+            const serve = item.usageNote || NO_SERVE;
+            if (selectedServes.length && !selectedServes.includes(serve)) return false;
+            if (selectedDishes.length && !selectedDishes.includes(item.item)) return false;
+            return true;
           });
+          renderList(items);
+          const count = selectedServes.length + selectedDishes.length + selectedLocations.length;
+          toggleFilterBtn.textContent = count ? `Filter (${count})` : "Filter";
+          const clear = document.getElementById("clear-filters");
+          if (clear) clear.hidden = !count;
+        }
+
+        function addChips(title, values, selected, onToggle) {
+          if (!values.length) return;
+          const legend = document.createElement("p");
+          legend.className = "muted filter-title";
+          legend.textContent = title;
+          filterPanel.appendChild(legend);
+          const wrap = document.createElement("div");
+          wrap.className = "chips";
+          values.forEach((value) => {
+            const chip = document.createElement("button");
+            chip.type = "button";
+            chip.className = "chip";
+            chip.textContent = value;
+            chip.addEventListener("click", () => {
+              const on = onToggle(value);
+              chip.classList.toggle("on", on);
+              applyFilters();
+            });
+            wrap.appendChild(chip);
+          });
+          filterPanel.appendChild(wrap);
+        }
+
+        function toggleIn(list, value) {
+          const i = list.indexOf(value);
+          if (i === -1) list.push(value);
+          else list.splice(i, 1);
+          return i === -1;
+        }
+
+        function renderFilters(items) {
+          const mains = items.filter((item) => item.section === "MAINS");
+          const serves = [];
+          mains.forEach((item) => {
+            const s = item.usageNote || NO_SERVE;
+            if (!serves.includes(s)) serves.push(s);
+          });
+          const dishes = mains.map((item) => item.item);
+          const locations = buildLocationOptions(items);
+
+          if (serves.length > 1) {
+            addChips("Mains by serve:", serves, selectedServes, (v) => toggleIn(selectedServes, v));
+          }
+          addChips("Mains (pick one or more):", dishes, selectedDishes, (v) => toggleIn(selectedDishes, v));
+          addChips("Location:", locations, selectedLocations, (v) => toggleIn(selectedLocations, v));
+
+          const clear = document.createElement("button");
+          clear.type = "button";
+          clear.id = "clear-filters";
+          clear.className = "filter-btn";
+          clear.textContent = "Clear filters";
+          clear.hidden = true;
+          clear.addEventListener("click", () => {
+            selectedServes = [];
+            selectedDishes = [];
+            selectedLocations = [];
+            filterPanel.querySelectorAll(".chip.on").forEach((c) => c.classList.remove("on"));
+            applyFilters();
+          });
+          filterPanel.appendChild(clear);
         }
 
         async function init() {
