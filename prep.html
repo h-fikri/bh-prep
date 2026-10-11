@@ -19,6 +19,7 @@
         </div>
       </div>
       <section id="filter-panel" class="filter-panel" hidden></section>
+      <div id="active-filters" class="active-filters" hidden></div>
       <section id="list"></section>
       <p class="error" id="message"></p>
     </main>
@@ -157,31 +158,100 @@
           });
         }
 
-        let selectedServes = [];
-        let selectedDishes = [];
         const NO_SERVE = "No serve time";
+        // One place that remembers what is selected. Serve and dish filters only touch MAINS.
+        const sel = { serve: [], dish: [], location: [] };
+        const chipEls = {}; // "group|value" -> button, so the summary bar can switch chips off again
+        const activeBar = document.getElementById("active-filters");
 
-        // Serve and dish filters only touch MAINS. Veg, soups and prep are never hidden by them.
+        function totalSelected() {
+          return sel.serve.length + sel.dish.length + sel.location.length;
+        }
+
         function applyFilters() {
-          let items = filterByLocations(allItems, selectedLocations);
+          selectedLocations = sel.location;
+          let items = filterByLocations(allItems, sel.location);
           items = items.filter((item) => {
             if (item.section !== "MAINS") return true;
             const serve = item.usageNote || NO_SERVE;
-            if (selectedServes.length && !selectedServes.includes(serve)) return false;
-            if (selectedDishes.length && !selectedDishes.includes(item.item)) return false;
+            if (sel.serve.length && !sel.serve.includes(serve)) return false;
+            if (sel.dish.length && !sel.dish.includes(item.item)) return false;
             return true;
           });
           renderList(items);
-          const count = selectedServes.length + selectedDishes.length + selectedLocations.length;
-          toggleFilterBtn.textContent = count ? `Filter (${count})` : "Filter";
-          const clear = document.getElementById("clear-filters");
-          if (clear) clear.hidden = !count;
+
+          const count = totalSelected();
+          toggleFilterBtn.textContent = count ? `Filter · ${count} on` : "Filter";
+          toggleFilterBtn.classList.toggle("active", count > 0);
+          renderActiveBar(items);
         }
 
-        function addChips(title, values, selected, onToggle) {
+        function setSelected(group, value, on) {
+          const list = sel[group];
+          const i = list.indexOf(value);
+          if (on && i === -1) list.push(value);
+          if (!on && i !== -1) list.splice(i, 1);
+          const chip = chipEls[group + "|" + value];
+          if (chip) {
+            chip.classList.toggle("on", on);
+            chip.setAttribute("aria-pressed", String(on));
+          }
+          applyFilters();
+        }
+
+        // Always-visible summary, so you can see what is on even when the filter panel is closed.
+        function renderActiveBar(shownItems) {
+          activeBar.innerHTML = "";
+          if (!totalSelected()) {
+            activeBar.hidden = true;
+            return;
+          }
+          activeBar.hidden = false;
+
+          const mainsAll = allItems.filter((x) => x.section === "MAINS").length;
+          const mainsShown = shownItems.filter((x) => x.section === "MAINS").length;
+          const head = document.createElement("div");
+          head.className = "active-head";
+          head.textContent = `Filtering: showing ${mainsShown} of ${mainsAll} mains`;
+          activeBar.appendChild(head);
+
+          const row = document.createElement("div");
+          row.className = "active-pills";
+          ["serve", "dish", "location"].forEach((group) => {
+            sel[group].forEach((value) => {
+              const pill = document.createElement("button");
+              pill.type = "button";
+              pill.className = "pill";
+              pill.setAttribute("aria-label", `Remove filter ${value}`);
+              pill.textContent = value + "  ✕";
+              pill.addEventListener("click", () => setSelected(group, value, false));
+              row.appendChild(pill);
+            });
+          });
+          const clear = document.createElement("button");
+          clear.type = "button";
+          clear.className = "pill clear";
+          clear.textContent = "Clear all";
+          clear.addEventListener("click", clearAll);
+          row.appendChild(clear);
+          activeBar.appendChild(row);
+        }
+
+        function clearAll() {
+          sel.serve = [];
+          sel.dish = [];
+          sel.location = [];
+          Object.values(chipEls).forEach((chip) => {
+            chip.classList.remove("on");
+            chip.setAttribute("aria-pressed", "false");
+          });
+          applyFilters();
+        }
+
+        function addChips(title, group, values) {
           if (!values.length) return;
           const legend = document.createElement("p");
-          legend.className = "muted filter-title";
+          legend.className = "filter-title";
           legend.textContent = title;
           filterPanel.appendChild(legend);
           const wrap = document.createElement("div");
@@ -190,22 +260,13 @@
             const chip = document.createElement("button");
             chip.type = "button";
             chip.className = "chip";
+            chip.setAttribute("aria-pressed", "false");
             chip.textContent = value;
-            chip.addEventListener("click", () => {
-              const on = onToggle(value);
-              chip.classList.toggle("on", on);
-              applyFilters();
-            });
+            chip.addEventListener("click", () => setSelected(group, value, !sel[group].includes(value)));
+            chipEls[group + "|" + value] = chip;
             wrap.appendChild(chip);
           });
           filterPanel.appendChild(wrap);
-        }
-
-        function toggleIn(list, value) {
-          const i = list.indexOf(value);
-          if (i === -1) list.push(value);
-          else list.splice(i, 1);
-          return i === -1;
         }
 
         function renderFilters(items) {
@@ -215,29 +276,29 @@
             const s = item.usageNote || NO_SERVE;
             if (!serves.includes(s)) serves.push(s);
           });
-          const dishes = mains.map((item) => item.item);
-          const locations = buildLocationOptions(items);
+          if (serves.length > 1) addChips("Mains by serve (tap to turn on)", "serve", serves);
+          addChips("Mains (tap one or more)", "dish", mains.map((item) => item.item));
+          addChips("Location (all sections)", "location", buildLocationOptions(items));
 
-          if (serves.length > 1) {
-            addChips("Mains by serve:", serves, selectedServes, (v) => toggleIn(selectedServes, v));
-          }
-          addChips("Mains (pick one or more):", dishes, selectedDishes, (v) => toggleIn(selectedDishes, v));
-          addChips("Location:", locations, selectedLocations, (v) => toggleIn(selectedLocations, v));
-
+          const actions = document.createElement("div");
+          actions.className = "filter-actions";
+          const done = document.createElement("button");
+          done.type = "button";
+          done.className = "primary-btn done-btn";
+          done.textContent = "Show list";
+          done.addEventListener("click", () => {
+            filterPanel.setAttribute("hidden", "true");
+            toggleFilterBtn.setAttribute("aria-expanded", "false");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
           const clear = document.createElement("button");
           clear.type = "button";
-          clear.id = "clear-filters";
           clear.className = "filter-btn";
-          clear.textContent = "Clear filters";
-          clear.hidden = true;
-          clear.addEventListener("click", () => {
-            selectedServes = [];
-            selectedDishes = [];
-            selectedLocations = [];
-            filterPanel.querySelectorAll(".chip.on").forEach((c) => c.classList.remove("on"));
-            applyFilters();
-          });
-          filterPanel.appendChild(clear);
+          clear.textContent = "Clear all";
+          clear.addEventListener("click", clearAll);
+          actions.appendChild(clear);
+          actions.appendChild(done);
+          filterPanel.appendChild(actions);
         }
 
         async function init() {
