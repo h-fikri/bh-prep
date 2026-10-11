@@ -563,3 +563,47 @@ body.has-nav {
     color: #333;
   }
 }
+
+/* --- v4: chips + home link --- */
+.filter-title {
+  margin: 8px 0 6px;
+  font-size: 0.9rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.chip {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.chip.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.filter-panel .filter-btn {
+  margin-top: 6px;
+}
+
+.top-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-nav a {
+  padding: 14px 4px;
+  font-size: 1rem;
+}

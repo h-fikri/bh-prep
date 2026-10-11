@@ -161,6 +161,7 @@ function filterByLocations(items, selectedLocations) {
 // Bottom bar: Prep | Dry Store | Freezer for the current week/day.
 function renderNav(active, week, day) {
   const items = [
+    { id: "home", label: "Home", href: "index.html" },
     { id: "prep", label: "Prep", href: `prep.html?week=${week}&day=${day}` },
     { id: "dry", label: "Dry Store", href: `pick.html?week=${week}&day=${day}&list=dry` },
     { id: "freezer", label: "Freezer", href: `pick.html?week=${week}&day=${day}&list=freezer` },
