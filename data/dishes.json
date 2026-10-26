@@ -38,6 +38,66 @@
     ]
   },
   {
+    "dishSlug": "bacon-and-corn-chowder",
+    "dishName": "Bacon & Corn Chowder",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Bacon",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Corn Kernels",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Creamed Corn",
+        "amountText": "20 can"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "bacon-corn-chowder",
+    "dishName": "Bacon Corn Chowder",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Bacon",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Corn Kernels",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Creamed Corn",
+        "amountText": "20 can"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      }
+    ]
+  },
+  {
     "dishSlug": "baked-fish-bechamel-herb-crumb",
     "dishName": "Baked Fish, bechamel herb crumb",
     "ingredients": [
@@ -74,6 +134,25 @@
     ],
     "notes": [
       "Sticky note: 10 trays / 200 / CHECK LIST ON BOARD; Handwritten: Herbcrumbs mix: 2 kg mix : 400 serve. Freeze the leftover."
+    ]
+  },
+  {
+    "dishSlug": "beef-and-barley",
+    "dishName": "Beef and Barley",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "15 kg",
+        "notes": "Written 'Veg soup' (probably veg soup mix)"
+      },
+      {
+        "ingredient": "Pearl Barley",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Beef Sliced",
+        "amountText": "9 kg"
+      }
     ]
   },
   {
@@ -123,6 +202,28 @@
       {
         "ingredient": "Soup Tomato A10",
         "amountText": "12 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "beef-and-vegetable",
+    "dishName": "Beef and Vegetable",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Beef Sliced",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Red Lentils",
+        "amountText": "5 kg"
       }
     ]
   },
@@ -512,6 +613,36 @@
     ]
   },
   {
+    "dishSlug": "broccoli-and-pea",
+    "dishName": "Broccoli & Pea",
+    "ingredients": [
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Peas",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Split Peas",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Broccoli Stems",
+        "amountText": "15 kg"
+      }
+    ]
+  },
+  {
     "dishSlug": "butter-chicken",
     "dishName": "Butter Chicken",
     "ingredients": [
@@ -566,6 +697,143 @@
     ],
     "notes": [
       "Minced diet: put the required amount of casserole through the mincer. Pureed diet: put the required amount in the puree machine with potato flakes until smooth and lump free (sheet text is cut off in the photo)."
+    ]
+  },
+  {
+    "dishSlug": "cauliflower",
+    "dishName": "Cauliflower",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Cauliflower Stems",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Veg Stock",
+        "amountText": "450 g"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Tasty Cheese",
+        "amountText": "2 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chicken-and-veg",
+    "dishName": "Chicken & Veg",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg",
+        "notes": "Also written 'Chicken Veg' / 'Chicken Vegetable' on the sheets"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Cream",
+        "amountText": "5 L"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chicken-and-vegetable-veg",
+    "dishName": "Chicken & Vegetable Veg",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg",
+        "notes": "Also written 'Chicken Veg' / 'Chicken Vegetable' on the sheets"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Cream",
+        "amountText": "5 L"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chicken-and-corn",
+    "dishName": "Chicken and Corn",
+    "ingredients": [
+      {
+        "ingredient": "Eggs",
+        "amountText": "120",
+        "notes": "No unit written (count)"
+      },
+      {
+        "ingredient": "Spring Onion",
+        "amountText": "3 bunch"
+      },
+      {
+        "ingredient": "Creamed Corn",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Corn Kernels",
+        "amountText": "4 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chicken-and-leek",
+    "dishName": "Chicken and Leek",
+    "ingredients": [
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Leeks",
+        "amountText": "5 bunch"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "4 kg"
+      }
     ]
   },
   {
@@ -673,6 +941,28 @@
     ],
     "notes": [
       "Handwritten on sheet: Revised 24/11/25"
+    ]
+  },
+  {
+    "dishSlug": "chicken-leek",
+    "dishName": "Chicken Leek",
+    "ingredients": [
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Leeks",
+        "amountText": "5 bunch"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "4 kg"
+      }
     ]
   },
   {
@@ -800,6 +1090,33 @@
     ]
   },
   {
+    "dishSlug": "chicken-veg",
+    "dishName": "Chicken Veg",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg",
+        "notes": "Also written 'Chicken Veg' / 'Chicken Vegetable' on the sheets"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Cream",
+        "amountText": "5 L"
+      }
+    ]
+  },
+  {
     "dishSlug": "chicken-w-creamy-pesto-sauce",
     "dishName": "Chicken w Creamy Pesto Sauce",
     "ingredients": [
@@ -842,6 +1159,28 @@
       {
         "ingredient": "Cornflour",
         "amountText": "100 g"
+      }
+    ]
+  },
+  {
+    "dishSlug": "chicken-wonton",
+    "dishName": "Chicken Wonton",
+    "ingredients": [
+      {
+        "ingredient": "Salt",
+        "amountText": "150 g"
+      },
+      {
+        "ingredient": "Mixed Veg",
+        "amountText": "16 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "9 kg"
+      },
+      {
+        "ingredient": "Chicken Stock",
+        "amountText": "2.2 kg"
       }
     ]
   },
@@ -1102,6 +1441,33 @@
     ]
   },
   {
+    "dishSlug": "cream-of-chicken",
+    "dishName": "Cream of Chicken",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg",
+        "notes": "Written 'Cr of Chicken' on the sheet"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Chicken Breast",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Chicken Stock",
+        "amountText": "400 g"
+      }
+    ]
+  },
+  {
     "dishSlug": "creamy-tuscan-chicken-pasta-bake",
     "dishName": "Creamy Tuscan Chicken Pasta Bake",
     "ingredients": [
@@ -1325,6 +1691,26 @@
     "notes": [
       "Handwritten: pour over fish.",
       "Handwritten: \"Trays\" note beside the ingredient list (number scribbled out, illegible)."
+    ]
+  },
+  {
+    "dishSlug": "gf-pumpkin",
+    "dishName": "GF Pumpkin",
+    "ingredients": [
+      {
+        "ingredient": "Soup",
+        "amountText": "2 x",
+        "notes": "Written '2 x soup'"
+      },
+      {
+        "ingredient": "Pumpkin",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Flakes",
+        "amountText": "2 jugs",
+        "notes": "Written '2xjugs flakes'"
+      }
     ]
   },
   {
@@ -1916,6 +2302,60 @@
     ]
   },
   {
+    "dishSlug": "lentil",
+    "dishName": "Lentil",
+    "ingredients": [
+      {
+        "ingredient": "Onion",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Garlic",
+        "amountText": "500 g"
+      },
+      {
+        "ingredient": "Carrot",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Celery",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Green Lentils",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Tomato Crushed",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Cumin",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Paprika",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Lemon Juice",
+        "amountText": "200 mL"
+      },
+      {
+        "ingredient": "Salt",
+        "amountText": "300 g"
+      },
+      {
+        "ingredient": "White Pepper",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Veg Stock",
+        "amountText": "200 g"
+      }
+    ]
+  },
+  {
     "dishSlug": "lentil-bolognaise",
     "dishName": "Lentil Bolognaise",
     "ingredients": [
@@ -2279,6 +2719,33 @@
     ]
   },
   {
+    "dishSlug": "minestrone",
+    "dishName": "Minestrone",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Bacon",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Red Lentils",
+        "amountText": "4 kg",
+        "notes": "Smudged on Week 1; Week 2 says 4 kg"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Parmesan Cheese",
+        "amountText": "2 kg"
+      }
+    ]
+  },
+  {
     "dishSlug": "moroccan-lamb-tagine",
     "dishName": "Moroccan Lamb Tagine",
     "ingredients": [
@@ -2337,6 +2804,24 @@
     ],
     "notes": [
       "Remove required amount for texture modification diets and modify accordingly"
+    ]
+  },
+  {
+    "dishSlug": "mushroom",
+    "dishName": "Mushroom",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Mushroom",
+        "amountText": "4 can"
+      }
     ]
   },
   {
@@ -2490,6 +2975,28 @@
     ],
     "notes": [
       "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "pea-ham",
+    "dishName": "Pea Ham",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Peas",
+        "amountText": "8 kg"
+      },
+      {
+        "ingredient": "Bacon",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Split Peas",
+        "amountText": "8 kg"
+      }
     ]
   },
   {
@@ -2707,6 +3214,72 @@
     ],
     "notes": [
       "NB: This meat loaf gets made in 2 batches."
+    ]
+  },
+  {
+    "dishSlug": "potato-leek",
+    "dishName": "Potato Leek",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Leeks",
+        "amountText": "4 bunch"
+      }
+    ]
+  },
+  {
+    "dishSlug": "pumpkin",
+    "dishName": "Pumpkin",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Pumpkin",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "pumpkin-and-lentil",
+    "dishName": "Pumpkin & Lentil",
+    "ingredients": [
+      {
+        "ingredient": "Potato",
+        "amountText": "10 kg"
+      },
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Pumpkin",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Red Lentils",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      }
     ]
   },
   {
@@ -3133,6 +3706,37 @@
     ]
   },
   {
+    "dishSlug": "sweet-potato-lentil",
+    "dishName": "Sweet Potato Lentil",
+    "ingredients": [
+      {
+        "ingredient": "Onion",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Sweet Potato",
+        "amountText": "30 kg"
+      },
+      {
+        "ingredient": "Garlic",
+        "amountText": "100 g"
+      },
+      {
+        "ingredient": "Curry Powder",
+        "amountText": "200 g"
+      },
+      {
+        "ingredient": "Red Lentils",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Ginger",
+        "amountText": "100 g",
+        "notes": "Handwritten on a paper slip stuck on the sheet"
+      }
+    ]
+  },
+  {
     "dishSlug": "sweet-potato-pattie",
     "dishName": "Sweet Potato Pattie",
     "ingredients": [
@@ -3323,6 +3927,46 @@
     ]
   },
   {
+    "dishSlug": "tomato",
+    "dishName": "Tomato",
+    "ingredients": [
+      {
+        "ingredient": "Tomato Soup",
+        "amountText": "15 can"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "6 kg"
+      },
+      {
+        "ingredient": "Tomato Paste",
+        "amountText": "3 kg"
+      }
+    ]
+  },
+  {
+    "dishSlug": "tomato-and-vegetable-veg",
+    "dishName": "Tomato & Vegetable Veg",
+    "ingredients": [
+      {
+        "ingredient": "Tomato Soup",
+        "amountText": "4 can"
+      },
+      {
+        "ingredient": "Milk Powder",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Red Lentils",
+        "amountText": "4 kg"
+      },
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "10 kg"
+      }
+    ]
+  },
+  {
     "dishSlug": "tuna-mornay",
     "dishName": "Tuna Mornay",
     "ingredients": [
@@ -3406,6 +4050,24 @@
     ],
     "notes": [
       "Handwritten (red): CHANGE 28/10/25."
+    ]
+  },
+  {
+    "dishSlug": "vegetable-and-rice",
+    "dishName": "Vegetable & Rice",
+    "ingredients": [
+      {
+        "ingredient": "Rice",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "7.5 kg"
+      }
     ]
   },
   {
@@ -3518,6 +4180,29 @@
     ],
     "notes": [
       "Bought in product (no recipe)"
+    ]
+  },
+  {
+    "dishSlug": "vegetable-veg",
+    "dishName": "Vegetable Veg",
+    "ingredients": [
+      {
+        "ingredient": "Veg Soup Mix",
+        "amountText": "20 kg",
+        "notes": "Word partly hidden on the sheet"
+      },
+      {
+        "ingredient": "Red Lentils",
+        "amountText": "5 kg"
+      },
+      {
+        "ingredient": "Pearl Barley",
+        "amountText": "2 kg"
+      },
+      {
+        "ingredient": "Cannellini Beans",
+        "amountText": "5 kg"
+      }
     ]
   },
   {

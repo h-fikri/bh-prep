@@ -2,7 +2,7 @@
 
 usage:  python3 tools/build_data.py "<folder with the 'Prep Week N - Day - Recipes.xlsx' files>" <output folder>
 
-Each workbook: sheet 1 = prep list, sheet 2 = dry-store pick sheet (ignored here), sheets 3+ = one recipe per sheet.
+Each workbook: sheet 1 = prep list, sheet 2 = dry-store pick sheet (ignored here), sheets 3+ = one recipe per sheet (mains and soups; a VEG row never links to a recipe).
 WARNING: the JSON in data/ is now the source of truth. Write to a scratch folder and diff before copying over data/.
 """
 import openpyxl, glob, json, re, os, sys, collections
@@ -93,7 +93,7 @@ for f in sorted(glob.glob(os.path.join(SRC,"*.xlsx"))):
         if a in (None,"Item"): continue
         if b is None and c is None and d is None and e is None and a.isupper():
             section = a; continue
-        prep.append({"week":week,"day":day,"section":section,"item":a.strip(),"_title":a.strip() if a.strip() in sheets else None,
+        prep.append({"week":week,"day":day,"section":section,"item":a.strip(),"_title":a.strip() if (a.strip() in sheets and section in ("MAINS","SOUPS")) else None,
                      "usageNote":(b or "").strip(),"qty":(c or "").strip() if isinstance(c,str) else (fmt_num(c) if c else ""),
                      "notes":(d or "").strip(),"_locs":set()})
 
