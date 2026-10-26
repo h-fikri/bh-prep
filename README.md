@@ -34,7 +34,7 @@ A small static website: plain HTML, CSS and JavaScript, with all content in thre
 ## What it does
 
 - **Prep list** for any day: Mains, Veg, Soups and Prep sections, with serve time, quantity, notes and location badges (Freezer, Dry Store). Each main links to its **recipe page**.
-- **Recipe pages** (81 dishes): title, ingredients, amounts and notes only. No times, temperatures, production amounts, dates or method (this is a deliberate project rule).
+- **Recipe pages** (108 dishes: mains and soups): title, ingredients, amounts and notes only. No times, temperatures, production amounts, dates or method (this is a deliberate project rule).
 - **Dry Store pick list** and **Freezer pick list** for any day: what to pick, how much, and which dish it is for.
 - **Tick boxes** on every prep and pick item. Ticks are saved on the device (no login, no server).
 - **Filter mains** by serve time (for example "Wed Dinner" or "Thu Lunch") or by individual dishes. Location filter applies to every section.
@@ -90,7 +90,7 @@ bh-prep/
 │   └── styles.css        All styling: tokens, components, responsive rules, print rules
 ├── data/
 │   ├── prep.json         294 prep rows (Week 1+2, Mon-Fri; MAINS, VEG, SOUPS, PREP)
-│   ├── dishes.json       81 recipes, nested (one block = one dish)
+│   ├── dishes.json       108 recipes (mains and soups), nested (one block = one dish)
 │   ├── pick.json         175 pick rows (125 dry store, 50 freezer)
 │   └── README.md         Data guide: fields, examples, editing rules
 ├── tools/

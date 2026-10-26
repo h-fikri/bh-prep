@@ -5,7 +5,7 @@ All content on the site comes from three JSON files in this folder. The pages ne
 | File | Rows | Used by |
 |---|---|---|
 | [`prep.json`](prep.json) | 294 prep lines (10 days) | `prep.html`, and links to `dish.html` |
-| [`dishes.json`](dishes.json) | 81 recipes, 750 ingredient lines | `dish.html` |
+| [`dishes.json`](dishes.json) | 108 recipes (mains and soups), ingredient lines in `dishes.json` | `dish.html` |
 | [`pick.json`](pick.json) | 175 pick lines (125 dry store, 50 freezer) | `pick.html` |
 
 **The JSON is now the source of truth.** It was converted once from the kitchen's Excel files (see [`../tools/README.md`](../tools/README.md)). Do not re-run the conversion over these files after you have edited them by hand, or your edits will be overwritten.
@@ -56,7 +56,7 @@ One object per line on a day's prep list. Order in the file is the order on the 
 | `week`, `day` | Which day's list this row is on | See codes above. |
 | `section` | Heading the row sits under | `MAINS`, `VEG`, `SOUPS` or `PREP`. The heading also picks the colour stripe (maroon / green / amber / grey). Another word works but gets no stripe colour. |
 | `item` | Name shown on the list | Also used as the tick-box identity (see below). |
-| `dishSlug` | Recipe to open when the name is tapped | `""` for no link, otherwise **must equal** a `dishSlug` in `dishes.json`. Only the 85 MAINS rows have one. |
+| `dishSlug` | Recipe to open when the name is tapped | `""` for no link, otherwise **must equal** a `dishSlug` in `dishes.json`. Only the 85 MAINS rows and 30 SOUPS rows have one (VEG and PREP rows never do). |
 | `location` | Badge(s) shown under the item, and the Location filter | `""`, `"Dry Store"`, `"Freezer"`, or both as exactly `"Freezer | Dry Store"` (space, bar, space). Other place names work too and become filter chips automatically. |
 | `usageNote` | Serve time shown on the right, e.g. `"Wed Dinner"` | For MAINS this is also the value of the **Mains by serve** filter. An empty value appears in the filter as "No serve time". Includes weekend serves such as `Sat Dinner`, `Sun Lunch`. |
 | `qty` | Quantity text, e.g. `"5 boxes"`, `"10 pkt"` | Free text. Mostly empty (245 of 294 rows). |
